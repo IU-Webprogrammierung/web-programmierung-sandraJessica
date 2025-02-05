@@ -85,3 +85,67 @@ p {
       display: block;
     }
   }
+
+  /*Header styling*/
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .nav-container {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-item > a {
+    text-decoration: none;
+    padding: 0.3em;
+    font-family: "Roboto Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+  }
+  
+  /*Hero styling*/
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-intro {
+    margin-bottom: 3rem;
+  }
+  
+  .hero-imgage-container {
+    margin-top: 3rem;
+  }
+  
+  a.hero-btn-primary {
+    background-color: #ac86a6;
+  }
+  
+  a.hero-btn-secondary {
+    background-color: #f5f1e1;
+  }
+  
+  /*About styling*/
+  
+  .about-container > p {
+    margin-bottom: 3rem;
+  }
+  
+  .about-image-container {
+    margin-top: 4rem;
+  }
+  
+  a.about-btn-primary {
+    background-color: #85c7aa;
+  }
+  
+  a.about-btn-secondary {
+    background-color: #f5f1e1;
+  }
