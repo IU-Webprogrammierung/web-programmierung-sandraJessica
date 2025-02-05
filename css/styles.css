@@ -57,3 +57,31 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
+/*Media-Queries*/
+
+/*Mobile*/
+
+@media (max-width: 550px) {
+    .hero,
+    .about,
+    .footer {
+      padding: 2rem 1.2rem;
+    }
+  
+    .hero-heading-break1 {
+      display: block;
+    }
+  
+    .hero-heading-break2 {
+      display: block;
+    }
+  
+    img.hero-img,
+    img.about-img {
+      width: 100%;
+    }
+  
+    .btn {
+      display: block;
+    }
+  }
