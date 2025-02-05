@@ -88,20 +88,24 @@ p {
 
   /*Header styling*/
 
-.header-container {
+  .header-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
   }
   
+  
   .nav-container {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .nav-item > a {
     text-decoration: none;
-    padding: 0.3em;
+    padding: 0.6em;
     font-family: "Roboto Mono", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -110,7 +114,6 @@ p {
   }
   
   /*Hero styling*/
-  
   .hero-container {
     display: flex;
     flex-direction: column;
