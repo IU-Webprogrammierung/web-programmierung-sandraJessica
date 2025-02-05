@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS stylesheet-->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!--Goole Fonts Roboto mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>My Webdesign Journey</title>
   </head>
   <body>
-    <!--Navigation elements-->
-    <header>
-      <section class="header">
+    <header class="header">
+      <section class="header-section">
         <div class="header-container">
           <!--Logo-->
           <a href="./index.html">
@@ -18,10 +25,12 @@
           <!--Nav-items-->
           <nav class="nav">
             <ul class="nav-container">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./projects.html">My Projects</a></li>
-              <li><a href="./about.html">About Me</a></li>
-              <li><a href="./contact.html">Contact Me</a></li>
+              <li class="nav-item"><a href="./index.html">Home</a></li>
+              <li class="nav-item">
+                <a href="./projects.html">My Projects</a>
+              </li>
+              <li class="nav-item"><a href="./about.html">About Me</a></li>
+              <li class="nav-item"><a href="./contact.html">Contact Me</a></li>
             </ul>
           </nav>
         </div>
@@ -30,22 +39,22 @@
     </header>
     <!--Main content-->
     <main>
-      <!--Hero-Section-->
+      <!--Hero-->
       <section class="hero">
         <div class="hero-container">
           <p class="eyebrow">Hi, my name is Sandra.</p>
-          <h1>VENTURING INTO DIGITAL DESIGN</h1>
-          <p>
+          <h1><span class="hero-heading-break1">VENTURING</span> <span class="hero-heading-break2">INTO DIGITAL</span> DESIGN</h1>
+          <p class="hero-intro">
             I am a Media Informatics student, aiming to pursue a career in web
             development. I am open to connecting for collaborative projects or
             assignments.
           </p>
           <!--Hero-links-->
           <div hero-btn-container>
-            <a href="./projects.html" class="hero-btn">My Projects</a>
-            <a href="./about.html" class="hero-btn">About Me</a>
+            <a href="./projects.html" class="hero-btn-primary btn">My Projects</a>
+            <a href="./about.html" class="hero-btn-secondary btn">About Me</a>
           </div>
-        </div>
+        
         <div class="hero-imgage-container">
           <img
             src="./assets/images/sandra_wittek.jpg"
@@ -55,6 +64,7 @@
             class="hero-img"
           />
         </div>
+      </div>
       </section>
       <!--About-->
       <section class="about">
@@ -65,17 +75,22 @@
             International University, I combine my practical experience in the
             air with a strong passion for web development and design. These two
             fields have taught me the importance of adaptability, attention to
-            detail, and a proactive mindset. I'm dedicated to creating
-            meaningful digital experiences and am always open to collaborating
-            on projects or assignments, bringing creativity and problem-solving
-            skills to every opportunity.
+            detail and a proactive mindset. I'm dedicated to creating meaningful
+            digital experiences and am always open to collaborating on projects
+            or assignments, bringing creativity and problem-solving skills to
+            every opportunity.
           </p>
 
           <!--About links-->
           <div about-btn-container>
-            <a href="./projects.html" class="about-btn">HTML Resume</a>
-            <a href="./about.html" class="about-btn">Let's Connect</a>
+            <a
+              href="https://sandrajessica.github.io/my-resume/"
+              class="about-btn-primary btn"
+              >HTML Resume</a
+            >
+            <a href="./contact.html" class="about-btn-secondary btn">Let's Connect</a>
           </div>
+          <div class="about-image-container"> 
           <img
             src="./assets/images/webdesign.jpg"
             alt="webdesign graphic"
@@ -83,6 +98,7 @@
             height="100%"
             class="about-img"
           />
+        </div>
         </div>
       </section>
     </main>
