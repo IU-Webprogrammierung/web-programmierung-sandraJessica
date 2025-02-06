@@ -43,7 +43,10 @@
       <section class="hero">
         <div class="hero-container">
           <p class="eyebrow">Hi, my name is Sandra.</p>
-          <h1><span class="hero-heading-break1">Venturing</span> <span class="hero-heading-break2">Into Digital</span> Design</h1>
+          <h1>
+            <span class="hero-heading-break1">Venturing</span>
+            <span class="hero-heading-break2">Into Digital</span> Design
+          </h1>
           <p class="hero-intro">
             I am a Media Informatics student, aiming to pursue a career in web
             development. I am open to connecting for collaborative projects or
@@ -51,20 +54,33 @@
           </p>
           <!--Hero-links-->
           <div hero-btn-container>
-            <a href="./projects.html" class="hero-btn-primary btn">My Projects</a>
+            <a href="./projects.html" class="hero-btn-primary btn"
+              >My Projects</a
+            >
             <a href="./about.html" class="hero-btn-secondary btn">About Me</a>
           </div>
-        
-        <div class="hero-imgage-container">
-          <img
-            src="./assets/images/sandra_wittek.jpg"
-            alt="picture of myself"
-            width="400px"
-            height="100%"
-            class="hero-img"
-          />
+          <!--Hero-image-->
+          <picture class="hero-imgage-container">
+            <source
+              srcset="./assets/images/small/sandra_wittek_600w.jpg"
+              media="(max-width: 600px)"
+            />
+            <source
+              srcset="./assets/images/medium/sandra_wittek_1000w.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/sandra_wittek_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/sandra_wittek_1000w.jpg"
+              alt="Black-and-white portrait image of myself with colorful, playful, and geometric elements"
+              width="100%"
+            />
+          </picture>
         </div>
-      </div>
       </section>
       <!--About-->
       <section class="about">
@@ -88,17 +104,31 @@
               class="about-btn-primary btn"
               >HTML Resume</a
             >
-            <a href="./contact.html" class="about-btn-secondary btn">Let's Connect</a>
+            <a href="./contact.html" class="about-btn-secondary btn"
+              >Let's Connect</a
+            >
           </div>
-          <div class="about-image-container"> 
-          <img
-            src="./assets/images/webdesign.jpg"
-            alt="webdesign graphic"
-            width="400px"
-            height="100%"
-            class="about-img"
-          />
-        </div>
+          <!--About-image-->
+          <picture class="about-img-container">
+            <source
+              srcset="./assets/images/small/webdesign_600w.jpg"
+              media="(max-width: 600px)"
+            />
+            <source
+              srcset="./assets/images/medium/webdesign_1000w.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/webdesign_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/webdesign_1000w.jpg"
+              alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
+              width="100%"
+            />
+          </picture>
         </div>
       </section>
     </main>
