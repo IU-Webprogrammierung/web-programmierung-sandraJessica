@@ -23,8 +23,17 @@
           <a href="./index.html" aria-label="Return to homepage">
             <p class="logo">sw pixel sparks</p>
           </a>
-          <!--Nav-items-->
-          <nav class="main-nav" aria-label="Main navigation">
+          <!--Nav-menu-->
+          <nav class="main-nav" aria-label="Main navigation-menu">
+            <!--Hamburger menu-->
+            <div class="hamburger-container">
+              <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <!--Navigation links-->
             <ul class="nav-container">
               <li class="nav-item"><a href="./index.html">Home</a></li>
               <li class="nav-item">
@@ -35,7 +44,6 @@
             </ul>
           </nav>
         </div>
-        <!--Hamburger menu placeholder-->
       </section>
     </header>
 
@@ -145,6 +153,27 @@
         </div>
         <!--Project #3-->
         <div class="project-container-three">
+          <!--Project #3 image-->
+          <picture class="project-img-container">
+            <source
+              srcset="./assets/images/small/portfolio_600w.jpg"
+              media="(max-width: 600px)"
+            />
+            <source
+              srcset="./assets/images/medium/portfolio-1000w.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/portfolio_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/portfolio-1000w.jpg"
+              alt="Screenshot of the hero section of a portfolio website."
+              width="100%"
+            />
+          </picture>
           <!--Project #3 image-->
           <picture class="project-img-container">
             <source
