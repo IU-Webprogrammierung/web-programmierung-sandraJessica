@@ -1,4 +1,5 @@
-/* CSS Reset: (for better layout control)
+/* ---------------------CSS Reset---------------------
+- for better layout control
 - Removes default margin and padding from all elements.  
 - Applies the border-box model to ensure padding and border are included in element dimensions.  
 - Prevents unexpected spacing issues and provides a consistent starting point for styling.  */
@@ -9,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/*Basic css styling*/
+/*---------------------Basic css styling---------------------*/
 
 h1 {
   margin-top: 0.5rem;
@@ -59,98 +60,138 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
-/*Media-Queries*/
+/*---------------------Media-Queries---------------------*/
 
-/*Mobile*/
+/*Mobile Media-Query*/
 
-@media (max-width: 550px) {
-    .hero,
-    .about,
-    .footer {
-      padding: 2rem 1.2rem;
-    }
-  
-    .hero-heading-break1 {
-      display: block;
-    }
-  
-    .hero-heading-break2 {
-      display: block;
-    }
-  
-    img.hero-img,
-    img.about-img {
-      width: 100%;
-    }
-  
-    .btn {
-      display: block;
-    }
+@media (max-width: 640px) {
+  .hero,
+  .about,
+  .footer {
+    padding: 2rem 1.2rem;
   }
 
-  /*Header styling*/
+  /*Title breaks at index.html mit span tags*/
+  .hero-heading-break1 {
+    display: block;
+  }
 
-  .header-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
+  .hero-heading-break2 {
+    display: block;
   }
-  
-  
-  .nav-container {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
+
+  .btn {
+    display: block;
   }
-  
-  .nav-item > a {
-    text-decoration: none;
-    padding: 0.6em;
-    font-family: "Roboto Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
+
+  /*Hide nav-items for mobile screens*/
+  .nav-container > .nav-item {
+    display: none;
   }
-  
-  /*Hero styling*/
-  .hero-container {
-    display: flex;
-    flex-direction: column;
+}
+
+/*Tablet Media-Query*/
+
+@media (max-width: 1024px) {
+  /*Hide nav-items for tablet screens*/
+  .nav-container > .nav-item {
+    display: none;
   }
-  
-  .hero-intro {
-    margin-bottom: 3rem;
-  }
-  
-  .hero-imgage-container {
-    margin-top: 3rem;
-  }
-  
-  a.hero-btn-primary {
-    background-color: #ac86a6;
-  }
-  
-  a.hero-btn-secondary {
-    background-color: #f5f1e1;
-  }
-  
-  /*About styling*/
-  
-  .about-container > p {
-    margin-bottom: 3rem;
-  }
-  
-  .about-image-container {
-    margin-top: 4rem;
-  }
-  
-  a.about-btn-primary {
-    background-color: #85c7aa;
-  }
-  
-  a.about-btn-secondary {
-    background-color: #f5f1e1;
-  }
+}
+
+/*---------------------Header styling---------------------*/
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  padding: 0.6em;
+  font-family: "Roboto Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
+
+/*Hamburger menu styling*/
+
+.hamburger-container {
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #85c7aa;
+  padding: 8px;
+  border: solid black;
+  height: 40px;
+  width: 40px;
+  border: solid black;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  box-shadow: #030303 0.1rem 0.1rem 0;
+}
+
+.bar {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+
+/*---------------------Hero styling---------------------*/
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-intro {
+  margin-bottom: 3rem;
+}
+
+.hero-imgage-container {
+  margin-top: 3rem;
+}
+
+a.hero-btn-primary {
+  background-color: #ac86a6;
+}
+
+a.hero-btn-secondary {
+  background-color: #f5f1e1;
+}
+
+/*---------------------About styling---------------------*/
+
+.about-container > p {
+  margin-bottom: 3rem;
+}
+
+.about-image-container {
+  margin-top: 4rem;
+}
+
+a.about-btn-primary {
+  background-color: #85c7aa;
+}
+
+a.about-btn-secondary {
+  background-color: #f5f1e1;
+}
