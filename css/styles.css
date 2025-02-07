@@ -34,6 +34,20 @@ h2 {
   margin: 0px 0px 1rem;
 }
 
+.hero,
+.about,
+.projects-hero,
+.projects,
+.about-me-hero,
+.about-me,
+.contact,
+.footer {
+  padding-top: 3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+
 /*Font styling*/
 
 h1,
@@ -72,11 +86,6 @@ p {
 /*Mobile Media-Query*/
 
 @media (max-width: 640px) {
-  .hero,
-  .about,
-  .footer {
-    padding: 3rem 1.2rem;
-  }
 
   /*Title breaks at index.html mit span tags*/
   .hero-heading-break1 {
@@ -100,6 +109,7 @@ p {
 /*Tablet Media-Query*/
 
 @media (max-width: 1024px) {
+ 
   /*Hide nav-items for tablet screens*/
   .nav-container > .nav-item {
     display: none;
@@ -182,7 +192,7 @@ a.logo-link {
   margin-bottom: 3rem;
 }
 
-.hero-imgage-container {
+.hero-img-container {
   margin-top: 3rem;
 }
 
@@ -196,12 +206,17 @@ a.hero-btn-secondary {
 
 /*---------------------About styling---------------------*/
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-container > p {
   margin-bottom: 3rem;
 }
 
-.about-image-container {
-  margin-top: 4rem;
+.about-img-container {
+  margin-top: 3rem;
 }
 
 a.about-btn-primary {
@@ -210,4 +225,18 @@ a.about-btn-primary {
 
 a.about-btn-secondary {
   background-color: #f5f1e1;
+}
+
+/*---------------------Projects styling---------------------*/
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------About-Me styling---------------------*/
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
 }
