@@ -60,6 +60,13 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.logo {
+  font-family: "Jersey 10", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
 /*---------------------Media-Queries---------------------*/
 
 /*Mobile Media-Query*/
@@ -68,7 +75,7 @@ p {
   .hero,
   .about,
   .footer {
-    padding: 2rem 1.2rem;
+    padding: 3rem 1.2rem;
   }
 
   /*Title breaks at index.html mit span tags*/
@@ -101,11 +108,21 @@ p {
 
 /*---------------------Header styling---------------------*/
 
+/*Logo*/
+
+.logo-link {
+  text-decoration: none;
+}
+
+a.logo-link {
+  margin-top: 1.5rem;
+}
+
 .header-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1.2rem;
 }
 
 .nav-container {
@@ -130,7 +147,6 @@ p {
 .hamburger-container {
   display: flex;
   justify-content: end;
-  margin-right: 1rem;
   margin-top: 1rem;
 }
 
