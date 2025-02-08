@@ -34,8 +34,8 @@ h2 {
   margin: 0px 0px 1rem;
 }
 
-.hero,
-.about,
+.hero-content,
+.about-content,
 .projects-hero,
 .projects,
 .about-me-hero,
@@ -226,6 +226,10 @@ a.about-btn-primary {
 
 a.about-btn-secondary {
   background-color: #f5f1e1;
+}
+
+.about-intro {
+  margin-bottom: 3rem;
 }
 
 /*---------------------Projects styling---------------------*/
