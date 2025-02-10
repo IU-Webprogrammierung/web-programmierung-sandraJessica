@@ -23,7 +23,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.btn {
+.btn, .form-button {
   text-decoration: none;
   text-align: center;
   border: solid black;
@@ -31,7 +31,7 @@ h2 {
   border-radius: 0.4rem;
   box-shadow: #030303 0.4rem 0.4rem 0;
   padding: 1rem 2rem;
-  margin: 0px 0px 1rem;
+  margin: 0px 0px 1.3rem;
 }
 
 .hero-content,
@@ -39,7 +39,7 @@ h2 {
 .projects-hero,
 .projects,
 .about-me-hero,
-.contact,
+.contact-content,
 .footer {
   padding-top: 3rem;
   padding-left: 1.2rem;
@@ -53,7 +53,9 @@ h2,
 h3,
 h4,
 p,
-a {
+a,
+label,
+.form-button {
   font-family: "Roboto Mono", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -313,3 +315,83 @@ a.about-btn-secondary {
 .about-me-paragraph {
   margin-top: 1rem; 
 }
+
+/*---------------------Contact styling---------------------*/
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 1rem;
+}
+
+.form-container {
+  border: solid black;
+  padding: 2rem;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  box-shadow: #030303 0.2rem 0.2rem 0;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  background-color:#f5f1e1;
+}
+
+.contact-content {
+  padding-bottom: 3rem;
+}
+
+
+.form-group textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  border: solid black;
+  margin-bottom: 0.5rem;
+  padding: 10px 15px;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  background-color:#dedbce;
+  
+ 
+}
+
+.form-group label {
+  display: block; 
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  border: solid black;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  height: 2.5rem;
+  margin-bottom: 0.3rem;
+  padding-left: 15px; 
+  background-color:#dedbce;
+  
+}
+
+input:focus, textarea:focus {
+  /* Entfernt den Standard-Fokus-Stil */
+  outline: none; 
+  border-color:#85c7aa;
+}
+
+.form-button {
+  display: flex;
+  box-shadow: #030303 0.2rem 0.2rem 0;
+  padding: 1rem 2rem;
+  margin: 0px 0px 1rem;
+  font-weight: bold;
+  background-color:#85c7aa;
+  
+}
+
+.contact-img-container img {
+  margin-top: 3rem;
+}
+
+
+
+
+
