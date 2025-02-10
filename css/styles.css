@@ -12,40 +12,6 @@
 
 /*---------------------Basic css styling---------------------*/
 
-h1 {
-  margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
-}
-
-.btn, .form-button {
-  text-decoration: none;
-  text-align: center;
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.4rem 0.4rem 0;
-  padding: 1rem 2rem;
-  margin: 0px 0px 1.3rem;
-}
-
-.hero-content,
-.about-content,
-.projects-hero,
-.projects,
-.about-me-hero,
-.contact-content,
-.footer {
-  padding-top: 3rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-}
-
 /*Font styling*/
 
 h1,
@@ -67,13 +33,59 @@ h1 {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.1;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
 }
+
+
+h2 {
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
 
 p {
   font-weight: 400;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.75);
 }
+
+/*Padding of screen sides*/
+
+.hero-content,
+.about-content,
+.projects-hero,
+.projects,
+.about-me-hero,
+.contact-content,
+.footer {
+  padding-top: 3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+/*Basic button styling*/
+
+.btn, .form-button {
+  text-decoration: none;
+  text-align: center;
+  border: solid black;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  box-shadow: #030303 0.4rem 0.4rem 0;
+  padding: 1rem 2rem;
+  margin: 0px 0px 1.3rem;
+  /* For button lift up hover effect*/
+  transition: transform 0.3s ease;
+}
+
+.btn:hover, .form-button:hover {
+  /* Button lift up hover effect*/
+    transform: translateY(-5px); 
+}
+
+/*Logo styling*/
 
 .logo {
   color: black;
@@ -208,6 +220,14 @@ a.hero-btn-secondary {
   background-color: #f5f1e1;
 }
 
+a.hero-btn-primary:hover {
+  background-color: #a2789b;
+}
+
+a.hero-btn-secondary:hover {
+  background-color: #f7f4ea;
+}
+
 /*---------------------About styling---------------------*/
 
 .about-container {
@@ -229,6 +249,14 @@ a.about-btn-primary {
 
 a.about-btn-secondary {
   background-color: #f5f1e1;
+}
+
+a.about-btn-primary:hover {
+  background-color: #7aba9e;
+}
+
+a.about-btn-secondary:hover {
+  background-color: #f7f4ea;
 }
 
 .about-intro {
@@ -384,7 +412,10 @@ input:focus, textarea:focus {
   margin: 0px 0px 1rem;
   font-weight: bold;
   background-color:#85c7aa;
-  
+}
+
+.form-button:hover {
+  background-color: #7aba9e;
 }
 
 .contact-img-container img {
