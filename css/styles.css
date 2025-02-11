@@ -350,6 +350,10 @@ a.about-btn-secondary:hover {
   margin-top: 1rem; 
 }
 
+.scuba {
+  margin-bottom: 3rem;
+}
+
 /*---------------------Contact styling---------------------*/
 
 .form-group {
