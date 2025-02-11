@@ -1,0 +1,22 @@
+# Node.js dependencies (if using npm)
+node_modules/
+package-lock.json
+
+# Editor-specific files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Cache and log files
+*.log
+*.cache
+*.tmp
+
+# Hidden system files
+*.swp
+*.swo
+*.bak
+
+# Build folders (if using Tailwind or another compiler)
+dist/
+build/
