@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--Google Fonts Roboto mono, Jersey 10-->
+   <!--Google Fonts Roboto mono, Jersey 10-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <title>My Projects</title>
@@ -21,10 +21,14 @@
       <section class="header-section">
         <div class="header-container">
           <!--Logo-->
-          <a href="./index.html" class="logo-link" aria-label="Return to homepage">
+        <a
+            href="./index.html"
+            class="logo-link"
+            aria-label="Return to homepage"
+          >
             <p class="logo">sw pixel sparks</p>
           </a>
-          <!--Nav-menu-->
+        <!--Nav-menu-->
           <nav class="main-nav" aria-label="Main navigation-menu">
             <!--Hamburger menu-->
             <div class="hamburger-container">
@@ -45,7 +49,7 @@
             </ul>
           </nav>
         </div>
-      </section>
+    </section>
     </header>
 
     <!----------------------Main--------------------->
@@ -70,8 +74,8 @@
       <!--Projects with image and description-->
       <section class="projects">
         <!--Project #1-->
-        <div class="project-container">
-          <!--Project #1 screenshot-->
+      <div class="project-container-one">
+          <!--Project #1 image-->
           <picture class="project-img-container">
             <source
               srcset="./assets/images/small/scratch_600w.jpg"
@@ -100,10 +104,10 @@
             showcasing a playful and engaging interface for cat lovers.
           </p>
           <!--Project link-->
-          <div class="projects-btn-container project-btn">
+        <div class="projects-btn-container">
             <a
               href="https://sandrajessica.github.io/from-scratch-to-match/"
-              class="project-btn-link"
+            class="project-btn-link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Sandra Wittek's 'From Scratch to Match' web design project (opens in a new tab)"
@@ -124,7 +128,7 @@
           </div>
         </div>
         <!--Project #2-->
-        <div class="project-container">
+      <div class="project-container">
           <!--Project #2 screenshot-->
           <picture class="project-img-container">
             <source
@@ -154,13 +158,10 @@
             visibility dynamically.
           </p>
           <!--Project link-->
-          <div class="projects-btn-container project-btn">
+        <div class="projects-btn-container">
             <a
               href="https://sandrajessica.github.io/pricing-table-design/"
-              class="project-btn-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek's pricing table project (opens in a new tab)"
+            class="project-btn-link"
               >See Website
               <!--Arrow icon-->
               <span
@@ -178,7 +179,7 @@
           </div>
         </div>
         <!--Project #3-->
-        <div class="project-container-three">
+      <div class="project-container-three">
           <!--Project #3 image-->
           <picture class="project-img-container">
             <source
@@ -186,7 +187,7 @@
               media="(max-width: 600px)"
             />
             <source
-              srcset="./assets/images/medium/portfolio-1000w.jpg"
+            srcset="./assets/images/medium/portfolio_1000w.jpg"
               media="(max-width: 1024px)"
             />
             <source
@@ -195,28 +196,7 @@
               width="500px"
             />
             <img
-              src="./assets/images/medium/portfolio-1000w.jpg"
-              alt="Screenshot of the hero section of a portfolio website."
-              width="100%"
-            />
-          </picture>
-          <!--Project #3 image-->
-          <picture class="project-img-container">
-            <source
-              srcset="./assets/images/small/portfolio_600w.jpg"
-              media="(max-width: 600px)"
-            />
-            <source
-              srcset="./assets/images/medium/portfolio_1000w.jpg"
-              media="(max-width: 1024px)"
-            />
-            <source
-              srcset="./assets/images/large/portfolio_1500w.jpg"
-              media="(min-width: 1025px)"
-              width="500px"
-            />
-            <img
-              src="./assets/images/medium/portfolio_1000w.jpg"
+            src="./assets/images/medium/portfolio_1000w.jpg"
               alt="Screenshot of the hero section of a portfolio website."
               width="100%"
             />
@@ -229,13 +209,10 @@
             providing a concise introduction to my creative abilities.
           </p>
           <!--Project link-->
-          <div class="projects-btn-container project-btn">
+        <div class="projects-btn-container">
             <a
               href="https://sandrajessica.github.io/sandrawittek/"
-              class="project-btn-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek's portfolio website project (opens in a new tab)"
+            class="project-btn-link"
               >See Website
               <!--Arrow icon-->
               <span
@@ -254,41 +231,45 @@
         </div>
       </section>
     </main>
-      <!----------------------Footer--------------------->
-      <section class="footer">
-        <div class="footer-container">
-          <p class="copyright">@ 2025 sw pixel sparks</p>
-      <div class="footer-menu-container"> 
+    <!----------------------Footer--------------------->
+    <section class="footer">
+      <div class="footer-container">
+        <p class="copyright">@ 2025 sw pixel sparks</p>
+        <div class="footer-menu-container">
           <!--Footer menu links-->
           <nav class="footer-nav" aria-label="Footer navigation">
-          <ul class="footer-menu-list">
+            <ul class="footer-menu-list">
               <li><a href="./index.html" class="footer-link">Home</a></li>
-              <li><a href="./projects.html" class="footer-link">My projects</a></li>
+              <li>
+                <a href="./projects.html" class="footer-link">My projects</a>
+              </li>
               <li><a href="./about.html" class="footer-link">About me</a></li>
-              <li><a href="./contact.html" class="footer-link">Contact me</a></li>
+              <li>
+                <a href="./contact.html" class="footer-link">Contact me</a>
+              </li>
             </ul>
           </nav>
         </div>
         <p class="footer-follow">Follow me</p>
-          <!--Font Awesome social icons/ links-->
-          <div class="footer-icons"> 
+        <!--Font Awesome social icons/ links-->
+        <div class="footer-icons">
           <ul class="footer-icon-container">
             <li>
               <a
                 href="https://www.linkedin.com/in/sandra-wittek-680042202/"
                 target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
                 ><i class="fa-brands fa-linkedin fa-2xl"></i
               ></a>
             </li>
             <li>
               <a
-              href="https://github.com/sandraJessica"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
-            >
+                href="https://github.com/sandraJessica"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
+              >
                 <i class="fa-brands fa-square-github fa-2xl"></i>
               </a>
             </li>
@@ -296,16 +277,16 @@
               <a
                 href="https://www.facebook.com/sandra.jess.5"
                 target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
               >
                 <i class="fa-brands fa-square-facebook fa-2xl"></i>
               </a>
             </li>
           </ul>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
     <!--Font Awesome Kit-->
     <script
       src="https://kit.fontawesome.com/9bdcbb06dd.js"
