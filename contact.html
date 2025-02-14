@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="./css/styles.css" />
-<!--Google Fonts Roboto mono, Jersey 10-->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-     rel="stylesheet"
-   />
+    <!--Google Fonts Roboto mono, Jersey 10-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Contact Me</title>
   </head>
   <body>
-    <!----------------------Header--------------------->
-    <!--Navigation elements-->
+    <!----------------------Header---------------------->
     <header class="header">
       <section class="header-section">
         <div class="header-container">
           <!--Logo-->
-      <a href="./index.html" class="logo-link">
+          <a
+            href="./index.html"
+            class="logo-link"
+            aria-label="Return to homepage"
+          >
             <p class="logo">sw pixel sparks</p>
           </a>
-        <!--Nav-menu-->
-          <nav class="main-nav" aria-label="Main navigation-menu">
+          <!--Nav-menu-->
+          <nav class="main-nav-menu" aria-label="Main navigation">
             <!--Hamburger menu-->
             <div class="hamburger-container">
               <div class="hamburger">
@@ -45,7 +48,7 @@
             </ul>
           </nav>
         </div>
-    </section>
+      </section>
     </header>
     <!----------------------Main--------------------->
     <main>
@@ -85,12 +88,18 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" required></textarea>
               </div>
-              <button class="form-button" type="submit" aria-label="Submit the form">Submit</button>
+              <button
+                class="form-button"
+                type="submit"
+                aria-label="Submit the form"
+              >
+                Submit
+              </button>
             </form>
           </div>
-          
-           <!--Contact graphic-->
-           <picture class="contact-img-container">
+
+          <!--Contact graphic-->
+          <picture class="contact-img-container">
             <source
               srcset="./assets/images/small/message_600w.jpg"
               media="(max-width: 600px)"
@@ -110,61 +119,63 @@
               width="100%"
             />
           </picture>
-
-
         </div>
-  </section>
+      </section>
     </main>
     <!----------------------Footer--------------------->
     <section class="footer">
       <div class="footer-container">
         <p class="copyright">@ 2025 sw pixel sparks</p>
-    <div class="footer-menu-container"> 
-        <!--Footer menu links-->
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <ul class="footer-menu-list">
-            <li><a href="./index.html" class="footer-link">Home</a></li>
-            <li><a href="./projects.html" class="footer-link">My projects</a></li>
-            <li><a href="./about.html" class="footer-link">About me</a></li>
-            <li><a href="./contact.html" class="footer-link">Contact me</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="footer-menu-container">
+          <!--Footer menu links-->
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul class="footer-menu-list">
+              <li><a href="./index.html" class="footer-link">Home</a></li>
+              <li>
+                <a href="./projects.html" class="footer-link">My projects</a>
+              </li>
+              <li><a href="./about.html" class="footer-link">About me</a></li>
+              <li>
+                <a href="./contact.html" class="footer-link">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <p class="footer-follow">Follow me</p>
         <!--Font Awesome social icons/ links-->
-        <div class="footer-icons"> 
-        <ul class="footer-icon-container">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sandra-wittek-680042202/"
-          target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
-              ><i class="fa-brands fa-linkedin fa-2xl"></i
-            ></a>
-          </li>
-          <li>
-      <a
-              href="https://github.com/sandraJessica"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-github fa-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/sandra.jess.5"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-facebook fa-2xl"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer-icons">
+          <ul class="footer-icon-container">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sandra-wittek-680042202/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sandraJessica"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
+              >
+                <i class="fa-brands fa-square-github fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/sandra.jess.5"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
+              >
+                <i class="fa-brands fa-square-facebook fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!--Font Awesome Kit-->
