@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS stylesheet-->
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--Google Fonts Roboto mono, Jersey 10-->
+    <!-- Google fonts roboto mono, jersey 10 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +15,11 @@
     <title>My Projects</title>
   </head>
   <body>
-    <!----------------------Header---------------------->
+    <!---------------------- Header section ---------------------->
     <header class="header">
       <section class="header-section">
         <div class="header-container">
-          <!--Logo-->
+          <!-- Logo -->
           <a
             href="./index.html"
             class="logo-link"
@@ -27,9 +27,9 @@
           >
             <p class="logo">sw pixel sparks</p>
           </a>
-          <!--Nav-menu-->
+          <!-- Main nav-menu -->
           <nav class="main-nav-menu" aria-label="Main navigation">
-            <!--Hamburger menu-->
+            <!-- Hamburger menu -->
             <div class="hamburger-container">
               <div class="hamburger">
                 <div class="bar"></div>
@@ -37,7 +37,7 @@
                 <div class="bar"></div>
               </div>
             </div>
-            <!--Navigation links-->
+            <!-- Main navigation links -->
             <ul class="nav-container">
               <li class="nav-item"><a href="./index.html">Home</a></li>
               <li class="nav-item">
@@ -50,12 +50,12 @@
         </div>
       </section>
     </header>
-    <!----------------------Main--------------------->
+    <!---------------------- Main content --------------------->
     <main>
-      <!----------------------Hero--------------------->
+      <!---------------------- Hero section --------------------->
       <section class="projects-hero">
         <div class="projects-hero-container">
-          <h1>My Projects</h1>
+          <h1 class="projects-h1">My Projects</h1>
           <p>
             As part of a Udemy course on web development, I have worked on some
             projects that have helped me deepen my skills in front-end
@@ -68,12 +68,11 @@
           </p>
         </div>
       </section>
-      <!----------------------Projects--------------------->
-      <!--Projects with image and description-->
+      <!---------------------- Projects section --------------------->
       <section class="projects">
-        <!--Project #1-->
-        <div class="project-container-one">
-          <!--Project #1 image-->
+        <!-- Project #1 -->
+        <div class="project-container">
+          <!-- Project image -->
           <picture class="project-img-container">
             <source
               srcset="./assets/images/small/scratch_600w.jpg"
@@ -94,6 +93,9 @@
               width="100%"
             />
           </picture>
+
+          <!-- Project content -->
+          <div class="project-content-container">
           <h2>From Scratch to Match</h2>
           <p>
             "From Scratch to Match" is a web design concept for a fictional app
@@ -101,8 +103,9 @@
             Bootstrap, the project presents a visual prototype of the platform,
             showcasing a playful and engaging interface for cat lovers.
           </p>
-          <!--Project link-->
-          <div class="projects-btn-container">
+
+          <!-- Project link -->
+          <div class="project-btn">
             <a
               href="https://sandrajessica.github.io/from-scratch-to-match/"
               class="project-btn-link"
@@ -110,7 +113,6 @@
               rel="noopener noreferrer"
               aria-label="Visit Sandra Wittek's 'From Scratch to Match' web design project (opens in a new tab)"
               >See Website
-              <!--Arrow icon-->
               <span
                 class="arrow-icon"
                 aria-hidden="true"
@@ -120,14 +122,15 @@
                 <img
                   src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                   alt=""
-                  width="
-              20px" /></span
+                  width="20px" /></span
             ></a>
           </div>
         </div>
-        <!--Project #2-->
+        </div>
+
+        <!-- Project #2 -->
         <div class="project-container">
-          <!--Project #2 screenshot-->
+          <!-- Project Image -->
           <picture class="project-img-container">
             <source
               srcset="./assets/images/small/pricing_table_600w.jpg"
@@ -148,6 +151,9 @@
               width="100%"
             />
           </picture>
+
+          <!-- Project content -->
+           <div class="project-content-container"> 
           <h2>Pricing Table</h2>
           <p>
             A responsive pricing table built with HTML and CSS adapts to
@@ -155,13 +161,12 @@
             readability on all devices by adjusting layout, styling, and
             visibility dynamically.
           </p>
-          <!--Project link-->
-          <div class="projects-btn-container">
+          <!-- Project link -->
+          <div class="project-btn">
             <a
               href="https://sandrajessica.github.io/pricing-table-design/"
               class="project-btn-link"
               >See Website
-              <!--Arrow icon-->
               <span
                 class="arrow-icon"
                 aria-hidden="true"
@@ -176,9 +181,11 @@
             ></a>
           </div>
         </div>
-        <!--Project #3-->
-        <div class="project-container-three">
-          <!--Project #3 image-->
+        </div>
+
+        <!-- Project #3 -->
+        <div class="project-container">
+          <!-- Project #3 image -->
           <picture class="project-img-container">
             <source
               srcset="./assets/images/small/portfolio_600w.jpg"
@@ -199,6 +206,9 @@
               width="100%"
             />
           </picture>
+
+          <!-- Project content -->
+           <div class="project-content-container"> 
           <h2>Portfolio Page</h2>
           <p>
             A simple portfolio web design showcasing my skills and hobbies.
@@ -206,13 +216,13 @@
             hobbies, and passion for web design. The layout is clean and easy,
             providing a concise introduction to my creative abilities.
           </p>
-          <!--Project link-->
-          <div class="projects-btn-container">
+
+          <!-- Project link -->
+          <div class="project-btn">
             <a
               href="https://sandrajessica.github.io/sandrawittek/"
               class="project-btn-link"
               >See Website
-              <!--Arrow icon-->
               <span
                 class="arrow-icon"
                 aria-hidden="true"
@@ -227,14 +237,16 @@
             ></a>
           </div>
         </div>
+        </div>
       </section>
     </main>
-    <!----------------------Footer--------------------->
+
+    <!---------------------- Footer section --------------------->
     <section class="footer">
       <div class="footer-container">
         <p class="copyright">@ 2025 sw pixel sparks</p>
         <div class="footer-menu-container">
-          <!--Footer menu links-->
+          <!-- Footer menu links -->
           <nav class="footer-nav" aria-label="Footer navigation">
             <ul class="footer-menu-list">
               <li><a href="./index.html" class="footer-link">Home</a></li>
@@ -249,7 +261,7 @@
           </nav>
         </div>
         <p class="footer-follow">Follow me</p>
-        <!--Font Awesome social icons/ links-->
+        <!-- Font awesome social icons/ links -->
         <div class="footer-icons">
           <ul class="footer-icon-container">
             <li>
@@ -285,7 +297,7 @@
         </div>
       </div>
     </section>
-    <!--Font Awesome Kit-->
+    <!-- Font awesome kit -->
     <script
       src="https://kit.fontawesome.com/9bdcbb06dd.js"
       crossorigin="anonymous"

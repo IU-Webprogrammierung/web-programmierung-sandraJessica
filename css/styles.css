@@ -1,4 +1,4 @@
-/* ---------------------CSS Reset---------------------
+/* --------------------- CSS Reset ---------------------
 - for better layout control
 - Removes default margin and padding from all elements.  
 - Applies the border-box model to ensure padding and border are included in element dimensions.  
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/*---------------------Basic css styling---------------------*/
+/*--------------------- Basic css styling ---------------------*/
 
 /*Font styling*/
 
@@ -38,17 +38,19 @@ h1 {
   text-transform: uppercase;
 }
 
-
 h2 {
   margin-bottom: 1.2rem;
   text-transform: uppercase;
 }
 
-
 p {
   font-weight: 400;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.75);
+}
+
+.projects-h1, .about-me-h1, .contact-h1 {
+  font-size: 2rem;
 }
 
 /*Padding of screen sides*/
@@ -66,7 +68,8 @@ p {
 
 /*Basic button styling*/
 
-.btn, .form-button {
+.btn,
+.form-button {
   text-decoration: none;
   text-align: center;
   border: solid black;
@@ -79,9 +82,10 @@ p {
   transition: transform 0.3s ease;
 }
 
-.btn:hover, .form-button:hover {
+.btn:hover,
+.form-button:hover {
   /* Button lift up hover effect*/
-    transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 /*Logo styling*/
@@ -101,7 +105,7 @@ picture {
   line-height: 0;
 }
 
-/*---------------------Media-Queries---------------------*/
+/*--------------------- Media-Queries ---------------------*/
 
 /*Mobile Media-Query*/
 
@@ -138,7 +142,7 @@ picture {
   }
 }
 
-/*---------------------Header styling---------------------*/
+/*--------------------- Header styling (all pages) ---------------------*/
 
 /*Logo*/
 
@@ -204,7 +208,7 @@ a.logo-link {
   background-color: rgb(0, 0, 0);
 }
 
-/*---------------------Hero styling---------------------*/
+/*--------------------- Hero styling (index.html) ---------------------*/
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -234,7 +238,7 @@ a.hero-btn-secondary:hover {
   background-color: #f7f4ea;
 }
 
-/*---------------------About styling---------------------*/
+/*--------------------- About styling (index.html) ---------------------*/
 
 .about-container {
   display: flex;
@@ -247,6 +251,10 @@ a.hero-btn-secondary:hover {
 
 .about-img-container {
   margin-top: 3rem;
+}
+
+.about-p {
+  margin-bottom: 3rem;
 }
 
 a.about-btn-primary {
@@ -265,11 +273,7 @@ a.about-btn-secondary:hover {
   background-color: #f7f4ea;
 }
 
-.about-intro {
-  margin-bottom: 3rem;
-}
-
-/*---------------------Projects styling---------------------*/
+/*--------------------- Projects styling (projects.html) ---------------------*/
 
 .project-container {
   display: flex;
@@ -297,9 +301,8 @@ a.about-btn-secondary:hover {
 
 .project-btn {
   position: relative;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding-left: 1.5rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .arrow-icon {
@@ -316,7 +319,7 @@ a.about-btn-secondary:hover {
   transform: scaleX(1.3);
 }
 
-/*---------------------About-Me styling---------------------*/
+/*--------------------- About-Me styling (about.html) ---------------------*/
 
 .about-me-container {
   display: flex;
@@ -342,19 +345,32 @@ a.about-btn-secondary:hover {
   border-radius: 0.4rem;
   box-shadow: #030303 0.2rem 0.2rem 0;
   padding: 2rem;
-  margin: 1.2rem; 
+  margin: 1.2rem;
   background-color: #f5f1e1;
 }
 
-.about-me-paragraph {
-  margin-top: 1rem; 
+.about-me-intro {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.about-me-h1 {
+  margin-bottom: 1.2rem;
+}
+
+.about-me-h2 {
+  font-size: 1.2rem;
+}
+
+.about-me-p {
+  font-size: 1rem;
 }
 
 .scuba {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
-/*---------------------Contact styling---------------------*/
+/*--------------------- Contact styling (contact.html) ---------------------*/
 
 .form-group {
   display: grid;
@@ -370,13 +386,12 @@ a.about-btn-secondary:hover {
   box-shadow: #030303 0.2rem 0.2rem 0;
   margin-left: 1.2rem;
   margin-right: 1.2rem;
-  background-color:#f5f1e1;
+  background-color: #f5f1e1;
 }
 
 .contact-content {
   padding-bottom: 3rem;
 }
-
 
 .form-group textarea {
   width: 100%;
@@ -387,13 +402,11 @@ a.about-btn-secondary:hover {
   padding: 10px 15px;
   border-width: 0.125em;
   border-radius: 0.4rem;
-  background-color:#dedbce;
-  
- 
+  background-color: #dedbce;
 }
 
 .form-group label {
-  display: block; 
+  display: block;
   margin-bottom: 0.4rem;
   font-weight: bold;
 }
@@ -404,15 +417,15 @@ a.about-btn-secondary:hover {
   border-radius: 0.4rem;
   height: 2.5rem;
   margin-bottom: 0.3rem;
-  padding-left: 15px; 
-  background-color:#dedbce;
-  
+  padding-left: 15px;
+  background-color: #dedbce;
 }
 
-input:focus, textarea:focus {
-  /* Entfernt den Standard-Fokus-Stil */
-  outline: none; 
-  border-color:#85c7aa;
+input:focus,
+textarea:focus {
+  /* Removes standard-focus style */
+  outline: none;
+  border-color: #85c7aa;
 }
 
 .form-button {
@@ -421,7 +434,7 @@ input:focus, textarea:focus {
   padding: 1rem 2rem;
   margin: 0px 0px 1rem;
   font-weight: bold;
-  background-color:#85c7aa;
+  background-color: #85c7aa;
 }
 
 .form-button:hover {
@@ -432,13 +445,14 @@ input:focus, textarea:focus {
   margin-top: 3rem;
 }
 
-/*---------------------Footer styling---------------------*/
+/*--------------------- Footer styling (all pages) ---------------------*/
 
 a.footer-link {
   text-decoration: none;
 }
 
-.footer-menu-list, .footer-icon-container {
+.footer-menu-list,
+.footer-icon-container {
   list-style-type: none;
   padding-right: 1.2rem;
 }
@@ -455,7 +469,7 @@ a.footer-link {
   row-gap: 1rem;
   padding-left: 1.2rem;
   border-top: solid black;
-  padding-top: 3rem; 
+  padding-top: 3rem;
 }
 
 .footer-follow {
@@ -471,7 +485,7 @@ a.footer-link {
 
 /* Pseudo-element for underline link animation */
 .footer-link::after {
-  content: ''; /* No visible content, but the pseudo-element exists */
+  content: ""; /* No visible content, but the pseudo-element exists */
   position: absolute;
   bottom: 0; /* Positions the underline at the bottom of the link.*/
   left: 0; /* Positions the underline at the left edge of the link.*/
@@ -491,7 +505,7 @@ a.footer-link {
 .footer-icon-container {
   display: flex;
   flex-direction: row;
-  gap: 1rem; 
+  gap: 1rem;
   padding-bottom: 3rem;
 }
 
@@ -499,12 +513,14 @@ a.footer-link {
   padding-top: 1rem;
 }
 
-.fa-linkedin, .fa-square-github, .fa-square-facebook {
+.fa-linkedin,
+.fa-square-github,
+.fa-square-facebook {
   transition: transform 0.2s ease-in-out;
 }
-.fa-linkedin:hover, .fa-square-github:hover, .fa-square-facebook:hover {
+.fa-linkedin:hover,
+.fa-square-github:hover,
+.fa-square-facebook:hover {
   transform: translateY(-3px);
-  color:#4c4c4c;
+  color: #4c4c4c;
 }
-
-
