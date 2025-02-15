@@ -61,9 +61,9 @@ p {
 .projects,
 .about-me-hero,
 .contact-content {
-  padding-top: 3rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  margin-top: 3rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 /*Basic button styling*/
@@ -109,7 +109,7 @@ picture {
 
 /*Mobile Media-Query*/
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   /*Title breaks at index.html mit span tags*/
   .hero-heading-break1 {
     display: block;
@@ -119,6 +119,7 @@ picture {
     display: block;
   }
 
+  /*Button position (full width)*/
   .btn {
     display: block;
   }
@@ -135,11 +136,43 @@ picture {
 
 /*Tablet Media-Query*/
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /*Hide nav-items for tablet screens*/
   .nav-container > .nav-item {
     display: none;
   }
+
+  .btn {
+    display: inline-flex;
+    width: fit-content;
+    margin-right: 1.5rem;
+    margin-bottom: 5rem; 
+  }
+
+  .hero-img-container img, .about-img-container img {
+  border: solid black;
+  border-width: 0.125em;
+  border-radius: 0.4rem;
+  box-shadow: #030303 0.1rem 0.1rem 0;
+  }
+
+  .hero-wrapper {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 1.2rem;
+
+  }
+}
+/*Desktop Media-Query*/
+
+@media (min-width: 1025px) {
+/*Hide hamburger-menu for desktop screens*/
+.hamburger-container > .hamburger {
+  display: none;
+}
+
 }
 
 /*--------------------- Header styling (all pages) ---------------------*/
@@ -209,10 +242,6 @@ a.logo-link {
 }
 
 /*--------------------- Hero styling (index.html) ---------------------*/
-.hero-container {
-  display: flex;
-  flex-direction: column;
-}
 
 .hero-intro {
   margin-bottom: 3rem;
@@ -237,6 +266,8 @@ a.hero-btn-primary:hover {
 a.hero-btn-secondary:hover {
   background-color: #f7f4ea;
 }
+
+
 
 /*--------------------- About styling (index.html) ---------------------*/
 
