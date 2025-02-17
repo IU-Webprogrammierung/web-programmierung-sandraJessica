@@ -164,9 +164,9 @@ picture {
     display: block; /* Line break after "Venturing Into" */
   }
 
-  .hero-intro,
+  .hero-intro, .about-p,
   .eyebrow {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .btn {
