@@ -12,7 +12,7 @@
 
 /*--------------------- Basic css styling ---------------------*/
 
-/*Font styling*/
+/* Font styling */
 
 h1,
 h2,
@@ -49,11 +49,13 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.projects-h1, .about-me-h1, .contact-h1 {
+.projects-h1,
+.about-me-h1,
+.contact-h1 {
   font-size: 2rem;
 }
 
-/*Padding of screen sides*/
+/* Padding of screen sides */
 
 .hero-content,
 .about-content,
@@ -66,7 +68,7 @@ p {
   margin-right: 1.2rem;
 }
 
-/*Basic button styling*/
+/* Basic button styling */
 
 .btn,
 .form-button {
@@ -78,17 +80,17 @@ p {
   box-shadow: #030303 0.4rem 0.4rem 0;
   padding: 1rem 2rem;
   margin: 0px 0px 1.3rem;
-  /* For button lift up hover effect*/
+  /* For button lift up hover effect */
   transition: transform 0.3s ease;
 }
 
 .btn:hover,
 .form-button:hover {
-  /* Button lift up hover effect*/
+  /* Button lift up hover effect */
   transform: translateY(-5px);
 }
 
-/*Logo styling*/
+/* Logo styling */
 
 .logo {
   color: black;
@@ -98,7 +100,7 @@ p {
   font-size: 1.7rem;
 }
 
-/*Basic picture tag reset*/
+/* Basic picture tag reset */
 
 picture {
   display: block;
@@ -107,90 +109,132 @@ picture {
 
 /*--------------------- Media-Queries ---------------------*/
 
-/*Mobile Media-Query*/
+/*--------------------- Mobile Media-Query ---------------------*/
 
-@media (max-width: 767px) {
-  /*Title breaks at index.html mit span tags*/
-  .hero-heading-break1 {
-    display: block;
+@media (max-width: 640px) {
+  /* Title breaks at index.html mit span tags */
+  .hero-heading-tablet {
+    display: none; /* Tablet-version heading is hidden */
   }
 
-  .hero-heading-break2 {
-    display: block;
+  .hero-heading-mobile span {
+    display: block; /* Line breaks for heading */
   }
-
-  /*Button position (full width)*/
+  /* Button position (full width) */
   .btn {
     display: block;
+    font-size: 1.2rem;
   }
 
   .about-text-span {
     display: block;
   }
 
-  /*Hide nav-items for mobile screens*/
+  /* Hide nav-items for mobile screens */
   .nav-container > .nav-item {
     display: none;
   }
 }
 
-/*Tablet Media-Query*/
+/*--------------------- Tablet Media-Query ---------------------*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /*Hide nav-items for tablet screens*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Hide nav-items for tablet screens */
   .nav-container > .nav-item {
     display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero-heading-mobile {
+    display: none; /* Mobile-version heading hidden */
+  }
+
+  .hero-heading-tablet {
+    display: block;
+  }
+
+  .hero-heading-tablet span {
+    display: block; /* Line break after "Venturing Into" */
+  }
+
+  .hero-intro,
+  .eyebrow {
+    font-size: 1rem;
   }
 
   .btn {
     display: inline-flex;
     width: fit-content;
     margin-right: 1.5rem;
-    margin-bottom: 5rem; 
+    margin-bottom: 5rem;
   }
 
-  .hero-img-container img, .about-img-container img {
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.1rem 0.1rem 0;
+  .hero-container {
+    margin-top: 4rem;
+  }
+
+  .hero-content,
+  .about-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about-content {
+    margin-top: 6rem;
+  }
+
+  .hero-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img-container img,
+  .about-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .hero-wrapper {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-right: 1.2rem;
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: flex-start;
   }
 }
-/*Desktop Media-Query*/
+
+/*--------------------- Desktop Media-Query ---------------------*/
 
 @media (min-width: 1025px) {
-/*Hide hamburger-menu for desktop screens*/
-.hamburger-container > .hamburger {
-  display: none;
-}
-
+  /* Hide hamburger-menu for desktop screens */
+  .hamburger-container > .hamburger {
+    display: none;
+  }
 }
 
 /*--------------------- Header styling (all pages) ---------------------*/
 
-/*Logo*/
+/* Logo */
 
 .logo-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-}
-
-a.logo-link {
-  margin-top: 1.5rem;
 }
 
 .header-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  height: 100px;
   padding: 1.2rem;
 }
 
@@ -211,12 +255,11 @@ a.logo-link {
   font-style: normal;
 }
 
-/*Hamburger menu styling*/
+/* Hamburger menu styling */
 
-.hamburger-container {
+.main-nav-menu {
   display: flex;
-  justify-content: end;
-  margin-top: 1rem;
+  align-items: center;
 }
 
 .hamburger {
@@ -225,10 +268,10 @@ a.logo-link {
   justify-content: space-around;
   align-items: center;
   background-color: #85c7aa;
-  padding: 8px;
+  padding: 4px 8px;
   border: solid black;
-  height: 40px;
-  width: 40px;
+  height: 39px;
+  width: 42px;
   border: solid black;
   border-width: 0.125em;
   border-radius: 0.4rem;
@@ -236,7 +279,7 @@ a.logo-link {
 }
 
 .bar {
-  width: 20px;
+  width: 24px;
   height: 3px;
   background-color: rgb(0, 0, 0);
 }
@@ -266,8 +309,6 @@ a.hero-btn-primary:hover {
 a.hero-btn-secondary:hover {
   background-color: #f7f4ea;
 }
-
-
 
 /*--------------------- About styling (index.html) ---------------------*/
 
@@ -528,7 +569,7 @@ a.footer-link {
 
 /* Underline link animation */
 .footer-link:hover::after {
-  width: 100%; /* Underline goes over whole content length*/
+  width: 100%; /* Underline goes over whole content length */
 }
 
 /*Footer icon styling*/
