@@ -112,6 +112,19 @@ picture {
 /*--------------------- Mobile Media-Query ---------------------*/
 
 @media (max-width: 640px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero-intro,
+  .about-p,
+  .eyebrow {
+    font-size: 1rem;
+  }
   /* Title breaks at index.html mit span tags */
   .hero-heading-tablet {
     display: none; /* Tablet-version heading is hidden */
@@ -133,6 +146,11 @@ picture {
   /* Hide nav-items for mobile screens */
   .nav-container > .nav-item {
     display: none;
+  }
+
+  .hero-img-container,
+  .about-img-container {
+    margin-top: 3rem;
   }
 }
 
@@ -164,7 +182,8 @@ picture {
     display: block; /* Line break after "Venturing Into" */
   }
 
-  .hero-intro, .about-p,
+  .hero-intro,
+  .about-p,
   .eyebrow {
     font-size: 1.2rem;
   }
@@ -290,10 +309,6 @@ picture {
   margin-bottom: 3rem;
 }
 
-.hero-img-container {
-  margin-top: 3rem;
-}
-
 a.hero-btn-primary {
   background-color: #ac86a6;
 }
@@ -319,10 +334,6 @@ a.hero-btn-secondary:hover {
 
 .about-container > p {
   margin-bottom: 3rem;
-}
-
-.about-img-container {
-  margin-top: 3rem;
 }
 
 .about-p {
