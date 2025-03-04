@@ -14,6 +14,10 @@
 
 /* Font styling */
 
+html {
+  font-size: 62.5%; /* 62.5% = 1rem → 10px for easier calculations */
+}
+
 h1,
 h2,
 h3,
@@ -49,13 +53,7 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.projects-h1,
-.about-me-h1,
-.contact-h1 {
-  font-size: 2rem;
-}
-
-/* Padding of screen sides */
+/* Margin of screen sides */
 
 .hero-content,
 .about-content,
@@ -79,7 +77,7 @@ p {
   border-radius: 0.4rem;
   box-shadow: #030303 0.4rem 0.4rem 0;
   padding: 1rem 2rem;
-  margin: 0px 0px 1.3rem;
+  margin: 0px 0px 2rem;
   /* For button lift up hover effect */
   transition: transform 0.3s ease;
 }
@@ -112,40 +110,55 @@ picture {
 /*--------------------- Mobile Media-Query ---------------------*/
 
 @media (max-width: 640px) {
+  /* Basic mobile styles */
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
+    line-height: 1.4;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
-  .hero-intro,
-  .about-p,
+
+  p,
   .eyebrow {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
-  /* Title breaks at index.html mit span tags */
+
+  .projects-h1,
+  .about-me-h1,
+  .contact-h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Button mobile styles */
+
+  .btn {
+    display: block; /* Button position (full width) */
+    font-size: 1.6rem;
+  }
+
+  .project-btn-link {
+    font-size: 1.6rem;
+  }
+
+  /* Header-section mobile styles */
+
+  .logo {
+    font-size: 2.4rem;
+  }
+
   .hero-heading-tablet {
     display: none; /* Tablet-version heading is hidden */
   }
 
   .hero-heading-mobile span {
-    display: block; /* Line breaks for heading */
-  }
-  /* Button position (full width) */
-  .btn {
-    display: block;
-    font-size: 1.2rem;
+    display: block; /* Title breaks at index.html mit span tags */
   }
 
-  .about-text-span {
-    display: block;
-  }
-
-  /* Hide nav-items for mobile screens */
   .nav-container > .nav-item {
-    display: none;
+    display: none; /* Hide nav-items for mobile screens */
   }
 
   .hero-img-container,
@@ -153,43 +166,157 @@ picture {
     margin-top: 3rem;
   }
 
-  .fa-linkedin, .fa-square-github, .fa-square-facebook {
-    font-size: 2.5em;
+  a.hero-btn-secondary {
+    margin-bottom: 6rem;
+  }
+
+  .about-container {
+    margin-top: 2rem;
+  }
+
+  /* About-me-section styles for mobile screens */
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 1 column layout for mobile screens */
+  }
+
+  .about-me-content-container {
+    padding: 4rem 2rem;
+    margin: 1.2rem;
+  }
+
+  .about-me-img-container {
+    margin: 1.2rem;
+  }
+
+  .about-me-img-container img {
+    display: block;
+  }
+
+  /* Project-section styles for mobile screens */
+
+  .project-container {
+    margin-bottom: 3rem;
+  }
+
+  /* Contact-section styles for mobile screens */
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  .form-group input {
+    height: 3rem;
+  }
+
+  .form-group textarea {
+    min-height: 10rem;
+  }
+
+  .form-container {
+    padding: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  /* Footer-section styles for mobile screens */
+
+  .footer-container {
+    margin-top: 4rem;
+  }
+
+  .fa-linkedin,
+  .fa-square-github,
+  .fa-square-facebook {
+    font-size: 4.4rem;
   }
 
   .footer-follow {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
 
   a.footer-link {
-    font-size: 1rem;
-  }
-
-  .copyright {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .footer-menu-link {
     padding-bottom: 0.3rem;
   }
 
+  .copyright {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 /*--------------------- Tablet Media-Query ---------------------*/
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  /* Hide nav-items for tablet screens */
-  .nav-container > .nav-item {
-    display: none;
-  }
+  /* Basic styles for tablet screens */
 
   h1 {
-    font-size: 3rem;
+    font-size: 4.2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  p,
+  .eyebrow {
+    font-size: 1.8rem;
+  }
+
+  .projects-h1,
+  .about-me-h1,
+  .contact-h1 {
+    font-size: 3.2rem;
+  }
+
+  header,
+  .hero-container,
+  .about-container,
+  .projects-hero,
+  .projects,
+  .about-me-hero-container,
+  .contact-content,
+  .form-container {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+  }
+
+  .hero-container {
+    margin-top: 3rem;
+  }
+
+  /* Button styles for tablet screens */
+
+  .btn {
+    display: inline-flex;
+    width: fit-content;
+    margin-right: 1.5rem;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .project-btn-link {
+    font-size: 1.8rem;
+  }
+
+  /* Header-section styles for tablet screens */
+
+  .logo {
+    font-size: 2.4rem;
+  }
+
+  .nav-container > .nav-item {
+    display: none; /* Hide nav-items for tablet screens */
   }
 
   .hero-heading-mobile {
@@ -204,19 +331,6 @@ picture {
     display: block; /* Line break after "Venturing Into" */
   }
 
-  .hero-intro,
-  .about-p,
-  .eyebrow {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    width: fit-content;
-    margin-right: 1.5rem;
-    margin-bottom: 5rem;
-  }
-
   .hero-container {
     margin-top: 4rem;
   }
@@ -225,6 +339,14 @@ picture {
   .about-content {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .about-me-hero {
+    margin-bottom: 4rem;
+  }
+
+  .about-me-intro {
+    margin-top:2rem;
   }
 
   .about-content {
@@ -249,6 +371,108 @@ picture {
     flex-direction: column;
     align-items: flex-end;
     text-align: flex-start;
+  }
+
+  /* Projects-section styles for tablet screens */
+
+  .project-container {
+    margin-bottom: 6rem;
+  }
+
+  .projects-p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  div.project-content-container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* About-me-section styles for tablet screens */
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 3rem;
+  } /* 2 Spalten nebeneinander */
+
+  .about-me-content-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    height: 100%; /* Oder eine feste Höhe, falls notwendig */
+    text-align: left; /* Optional, um den Text innerhalb der Box zu zentrieren */
+  }
+
+  .about-me-img-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Contact-section styles for tablet screens */
+
+  label {
+    font-size: 1.8rem;
+  }
+
+  button.form-button {
+    font-size: 1.8rem;
+  }
+
+  .form-group input {
+    height: 3.5rem;
+  }
+
+  .form-group textarea {
+    min-height: 15rem;
+  }
+
+  .form-container {
+    padding: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  /* Footer-section styles for tablet screens */
+
+  .footer-container {
+    margin-top: 8rem;
+  }
+
+  .fa-linkedin,
+  .fa-square-github,
+  .fa-square-facebook {
+    font-size: 4rem;
+  }
+
+  .footer-follow {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  a.footer-link {
+    font-size: 2.2rem;
+  }
+
+  .copyright {
+    font-size: 1.6rem;
+  }
+
+  .footer-menu-link {
+    padding-bottom: 0.3rem;
+  }
+
+  .footer-item.item-1 {
+    margin-left: 3.2rem;
+  }
+
+  .footer-item.item-2,
+  .footer-item.item-3,
+  .footer-item.item-4 {
+    margin-right: 3.2rem;
   }
 }
 
@@ -387,7 +611,6 @@ a.about-btn-secondary:hover {
   border-width: 0.125em;
   border-radius: 0.4rem;
   box-shadow: #030303 0.2rem 0.2rem 0;
-  margin-bottom: 3rem;
 }
 
 .project-img-container {
@@ -426,22 +649,11 @@ a.about-btn-secondary:hover {
 
 /*--------------------- About-Me styling (about.html) ---------------------*/
 
-.about-me-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-me-img-container {
   border: solid black;
   border-width: 0.125em;
   border-radius: 0.4rem;
   box-shadow: #030303 0.2rem 0.2rem 0;
-  margin: 1.2rem;
-}
-
-.about-me-img-container img {
-  display: block;
-  border-radius: 0.2rem;
 }
 
 .about-me-content-container {
@@ -449,30 +661,15 @@ a.about-btn-secondary:hover {
   border-width: 0.125em;
   border-radius: 0.4rem;
   box-shadow: #030303 0.2rem 0.2rem 0;
-  padding: 2rem;
-  margin: 1.2rem;
   background-color: #f5f1e1;
 }
 
 .about-me-intro {
   margin-bottom: 2rem;
-  font-size: 1rem;
 }
 
 .about-me-h1 {
   margin-bottom: 1.2rem;
-}
-
-.about-me-h2 {
-  font-size: 1.2rem;
-}
-
-.about-me-p {
-  font-size: 1rem;
-}
-
-.scuba {
-  margin-bottom: 5rem;
 }
 
 /*--------------------- Contact styling (contact.html) ---------------------*/
@@ -485,13 +682,10 @@ a.about-btn-secondary:hover {
 
 .form-container {
   border: solid black;
-  padding: 2rem;
   border-width: 0.125em;
   border-radius: 0.4rem;
   box-shadow: #030303 0.2rem 0.2rem 0;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
-  background-color: #f5f1e1;
+  background-color: #e4e2d9;
 }
 
 .contact-content {
@@ -500,14 +694,13 @@ a.about-btn-secondary:hover {
 
 .form-group textarea {
   width: 100%;
-  min-height: 100px;
   resize: vertical;
   border: solid black;
   margin-bottom: 0.5rem;
   padding: 10px 15px;
   border-width: 0.125em;
   border-radius: 0.4rem;
-  background-color: #dedbce;
+  background-color: #f5f1e1;
 }
 
 .form-group label {
@@ -520,10 +713,9 @@ a.about-btn-secondary:hover {
   border: solid black;
   border-width: 0.125em;
   border-radius: 0.4rem;
-  height: 2.5rem;
   margin-bottom: 0.3rem;
   padding-left: 15px;
-  background-color: #dedbce;
+  background-color: #f5f1e1;
 }
 
 input:focus,
@@ -554,14 +746,13 @@ textarea:focus {
 
 a.footer-link {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.75)
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .footer-menu-list,
 .footer-icon-container {
   list-style-type: none;
 }
-
 
 /* Grid layout */
 
@@ -575,9 +766,9 @@ a.footer-link {
 }
 
 .item-1 {
- grid-row: span 4; 
- justify-self: start;
- align-self: center;
+  grid-row: span 4;
+  justify-self: start;
+  align-self: center;
 }
 
 .item-2 {
@@ -586,7 +777,6 @@ a.footer-link {
 
 .item-3 {
   grid-area: 2 / 2 / 3 / 3;
-
 }
 
 /* Underline link animation */
@@ -604,14 +794,13 @@ a.footer-link {
   left: 0; /* Positions the underline at the left edge of the link.*/
   width: 0; /*Starts the underline with a width of 0, and on hover, it grows to 100%*/
   height: 2px; /* Thickness of underline */
-  background-color:rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   transition: width 0.3s ease; /* Animation length and transition */
 }
 
 .footer-link:hover::after {
   width: 100%; /* Underline goes over whole content length */
 }
-
 
 /*Footer icon styling*/
 
