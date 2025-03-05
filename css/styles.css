@@ -53,19 +53,6 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
-/* Margin of screen sides */
-
-.hero-content,
-.about-content,
-.projects-hero,
-.projects,
-.about-me-hero,
-.contact-content {
-  margin-top: 3rem;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
-}
-
 /* Basic button styling */
 
 .btn,
@@ -132,6 +119,17 @@ picture {
     font-size: 2.8rem;
   }
 
+  .hero-content,
+  .about-content,
+  .projects-hero,
+  .projects,
+  .about-me-hero,
+  .contact-content {
+    margin-top: 3rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
   /* Button mobile styles */
 
   .btn {
@@ -149,16 +147,22 @@ picture {
     font-size: 2.4rem;
   }
 
-  .hero-heading-tablet {
+  .header-container {
+    padding: 1.8rem;
+  }
+
+  .nav-container > .nav-item {
+    display: none; /* Hide nav-items for mobile screens */
+  }
+
+  /* Hero-section mobile styles */
+
+  .hero-heading {
     display: none; /* Tablet-version heading is hidden */
   }
 
   .hero-heading-mobile span {
     display: block; /* Title breaks at index.html mit span tags */
-  }
-
-  .nav-container > .nav-item {
-    display: none; /* Hide nav-items for mobile screens */
   }
 
   .hero-img-container,
@@ -174,36 +178,33 @@ picture {
     margin-top: 2rem;
   }
 
-  /* About-me-section styles for mobile screens */
+  /* About-me-section mobile styles */
 
   .about-me-container {
     display: grid;
-    grid-template-columns: repeat(
-      1,
-      1fr
-    ); /* 1 column layout for mobile screens */
+    grid-template-columns: 1fr; /* 1 column layout for mobile screens */
   }
 
   .about-me-content-container {
     padding: 4rem 2rem;
-    margin: 1.2rem;
+    margin: 1.8rem;
   }
 
   .about-me-img-container {
-    margin: 1.2rem;
+    margin: 1.8rem;
   }
 
   .about-me-img-container img {
     display: block;
   }
 
-  /* Project-section styles for mobile screens */
+  /* Project-section mobile styles */
 
   .project-container {
     margin-bottom: 3rem;
   }
 
-  /* Contact-section styles for mobile screens */
+  /* Contact-section mobile styles */
 
   label {
     font-size: 1.4rem;
@@ -219,14 +220,15 @@ picture {
 
   .form-container {
     padding: 2rem;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
   }
 
-  /* Footer-section styles for mobile screens */
+  /* Footer-section mobile styles */
 
   .footer-container {
     margin-top: 4rem;
+    padding: 3rem 1.8rem;
   }
 
   .fa-linkedin,
@@ -257,7 +259,7 @@ picture {
 /*--------------------- Tablet Media-Query ---------------------*/
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  /* Basic styles for tablet screens */
+  /* Basic tables styles */
 
   h1 {
     font-size: 4.2rem;
@@ -291,11 +293,13 @@ picture {
     margin-right: 3.2rem;
   }
 
-  .hero-container {
+  .hero-container,
+  .projects-hero-container,
+  .contact-container {
     margin-top: 3rem;
   }
 
-  /* Button styles for tablet screens */
+  /* Button tablet styles */
 
   .btn {
     display: inline-flex;
@@ -309,7 +313,7 @@ picture {
     font-size: 1.8rem;
   }
 
-  /* Header-section styles for tablet screens */
+  /* Header-section tablet styles */
 
   .logo {
     font-size: 2.4rem;
@@ -319,34 +323,27 @@ picture {
     display: none; /* Hide nav-items for tablet screens */
   }
 
+  /* Hero-section tablet styles */
+
   .hero-heading-mobile {
     display: none; /* Mobile-version heading hidden */
   }
 
-  .hero-heading-tablet {
+  .hero-heading {
     display: block;
   }
 
-  .hero-heading-tablet span {
+  .hero-heading span {
     display: block; /* Line break after "Venturing Into" */
   }
 
-  .hero-container {
+  .about-me-hero-container {
     margin-top: 4rem;
-  }
-
-  .hero-content,
-  .about-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .about-me-hero {
     margin-bottom: 4rem;
   }
 
   .about-me-intro {
-    margin-top:2rem;
+    margin-top: 2rem;
   }
 
   .about-content {
@@ -373,7 +370,7 @@ picture {
     text-align: flex-start;
   }
 
-  /* Projects-section styles for tablet screens */
+  /* Projects-section tablet styles */
 
   .project-container {
     margin-bottom: 6rem;
@@ -389,22 +386,22 @@ picture {
     margin-bottom: 3rem;
   }
 
-  /* About-me-section styles for tablet screens */
+  /* About-me-section tablet styles */
 
   .about-me-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
     gap: 30px;
     margin: 0 3rem;
-  } /* 2 Spalten nebeneinander */
+  }
 
   .about-me-content-container {
     padding: 2rem;
     display: flex;
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /* Vertikal zentrieren */
-    height: 100%; /* Oder eine feste Höhe, falls notwendig */
-    text-align: left; /* Optional, um den Text innerhalb der Box zu zentrieren */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: left;
   }
 
   .about-me-img-container img {
@@ -413,7 +410,7 @@ picture {
     width: 100%;
   }
 
-  /* Contact-section styles for tablet screens */
+  /* Contact-section tablet styles */
 
   label {
     font-size: 1.8rem;
@@ -436,7 +433,7 @@ picture {
     margin-bottom: 5rem;
   }
 
-  /* Footer-section styles for tablet screens */
+  /* Footer-section tablet styles */
 
   .footer-container {
     margin-top: 8rem;
@@ -449,12 +446,12 @@ picture {
   }
 
   .footer-follow {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 
   a.footer-link {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .copyright {
@@ -479,9 +476,114 @@ picture {
 /*--------------------- Desktop Media-Query ---------------------*/
 
 @media (min-width: 1025px) {
-  /* Hide hamburger-menu for desktop screens */
+  /* Basic desktop styles */
+
+  .hero-heading-mobile {
+    display: none; /* Mobile-version heading hidden */
+  }
+
+  .hero-heading {
+    display: block;
+  }
+
+  .hero-heading span {
+    display: block; /* Line break after "Venturing Into" */
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  p,
+  .eyebrow {
+    font-size: 1.8rem;
+  }
+
+  header,
+  .hero-container,
+  .about-container,
+  .projects-hero,
+  .projects,
+  .about-me-hero-container,
+  .contact-content,
+  .form-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .hero-container,
+  .projects-hero-container,
+  .contact-container {
+    margin-top: 4rem;
+  }
+
+  /* Header-section desktop styles */
+
   .hamburger-container > .hamburger {
-    display: none;
+    display: none; /* Hide hamburger-menu for desktop screens */
+  }
+
+  .logo {
+    font-size: 2.4rem;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .nav-item > a {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  /* Footer-section desktop styles */
+
+  .footer-container {
+    margin-top: 8rem;
+  }
+
+  .fa-linkedin,
+  .fa-square-github,
+  .fa-square-facebook {
+    font-size: 4rem;
+  }
+
+  .footer-follow {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  a.footer-link {
+    font-size: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 1.8rem;
+  }
+
+  .footer-menu-link {
+    padding-bottom: 0.3rem;
+  }
+
+  .footer-item.item-1 {
+    margin-left: 5rem;
+  }
+
+  .footer-item.item-2,
+  .footer-item.item-3,
+  .footer-item.item-4 {
+    margin-right: 5rem;
   }
 }
 
@@ -500,7 +602,6 @@ picture {
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  padding: 1.2rem;
 }
 
 .nav-container {
@@ -510,14 +611,35 @@ picture {
   align-items: center;
 }
 
-.nav-item > a {
+.nav-item {
+  position: relative;
   text-decoration: none;
-  padding: 0.6em;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Roboto mono", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 14px;
   font-style: normal;
+}
+
+/* Pseudo-element for underline link animation */
+
+.nav-item > a::after {
+  content: ""; /* No visible content, but the pseudo-element exists */
+  position: absolute;
+  bottom: 0; /* Positions the underline at the bottom of the link.*/
+  left: 0; /* Positions the underline at the left edge of the link.*/
+  width: 0; /*Starts the underline with a width of 0, and on hover, it grows to 100%*/
+  height: 2px; /* Thickness of underline */
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: width 0.3s ease; /* Animation length and transition */
+}
+
+.nav-item > a:hover::after {
+  width: 100%; /* Underline goes over whole content length */
+}
+
+.nav-item > a:hover {
+  color: rgba(0, 0, 0, 0.75);
 }
 
 /* Hamburger menu styling */
@@ -761,7 +883,6 @@ a.footer-link {
   grid-template-rows: repeat(3, 60px);
   grid-template-columns: 1fr auto;
   column-gap: 20px;
-  padding: 3rem 1.2rem;
   border-top: solid black;
 }
 
