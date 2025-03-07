@@ -41,7 +41,7 @@
     <main>
       <!---------------------- Hero section ---------------------->
       <section class="hero">
-        <div class="hero-wrapper">
+        <div class="hero-grid">
           <div class="hero-container">
             <div class="hero-content">
               <p class="eyebrow">Hi, my name is Sandra.</p>
@@ -66,7 +66,7 @@
                 collaborative projects, assignments or new opportunities.
               </p>
               <!-- Hero buttons -->
-              <div hero-btn-container>
+              <div class="hero-btn-container">
                 <a href="./projects.html" class="hero-btn-primary btn"
                   >My Projects</a
                 >
@@ -76,82 +76,88 @@
               </div>
             </div>
           </div>
-          <!-- Hero image (full width) -->
-          <picture class="hero-img-container">
-            <source
-              srcset="./assets/images/small/sandra_wittek_600w.jpg"
-              media="(max-width: 640px)"
-            />
-            <source
-              srcset="./assets/images/medium/sandra_wittek_1000h.jpg"
-              media="(max-width: 1024px)"
-            />
-            <source
-              srcset="./assets/images/large/sandra_wittek_1500w.jpg"
-              media="(min-width: 1025px)"
-              width="500px"
-            />
-            <img
-              src="./assets/images/medium/sandra_wittek_1500w.jpg"
-              alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
-              width="100%"
-            />
-          </picture>
+          <div class="hero-image">
+            <!-- Hero image (full width) -->
+            <picture class="hero-img-container">
+              <source
+                srcset="./assets/images/small/sandra_wittek_600w.jpg"
+                media="(max-width: 640px)"
+              />
+              <source
+                srcset="./assets/images/medium/sandra_wittek_1000h.jpg"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="./assets/images/large/sandra_wittek_1500w.jpg"
+                media="(min-width: 1025px)"
+                width="500px"
+              />
+              <img
+                src="./assets/images/medium/sandra_wittek_1500w.jpg"
+                alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
+                width="100%"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <!---------------------- About section ---------------------->
       <section class="about">
-        <div class="about-container">
-          <div class="about-content">
-            <h2>Welcome Aboard!</h2>
-            <p class="about-p">
-              As a flight attendant and Media Informatics student at IU
-              International University of Applied Sciences, I combine my
-              practical experience in the air with a passion for web development
-              and design. Both fields have taught me the value of adaptability,
-              attention to detail and creative problem-solving. When I’m not
-              cruising at 30,000 feet, I enjoy refining my tech skills and
-              transforming ideas into functional designs&nbsp;-&nbsp;one line at
-              a time.
-            </p>
+        <div class="about-grid">
+          <div class="about-container">
+            <div class="about-content">
+              <h2>Welcome Aboard!</h2>
+              <p class="about-p">
+                As a flight attendant and Media Informatics student at IU
+                International University of Applied Sciences, I combine my
+                practical experience in the air with a passion for web
+                development and design. Both fields have taught me the value of
+                adaptability, attention to detail and creative problem-solving.
+                When I’m not cruising at 30,000 feet, I enjoy refining my tech
+                skills and transforming ideas into functional
+                designs&nbsp;-&nbsp;one line at a time.
+              </p>
 
-            <!-- About buttons -->
-            <div class="about-btn-container">
-              <a
-                href="https://sandrajessica.github.io/my-resume/"
-                class="about-btn-primary btn"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Sandra Wittek's resume in HTML format (opens in a new tab)"
-                >HTML Resume</a
-              >
-              <a href="./contact.html" class="about-btn-secondary btn"
-                >Let's Connect</a
-              >
+              <!-- About buttons -->
+              <div class="about-btn-container">
+                <a
+                  href="https://sandrajessica.github.io/my-resume/"
+                  class="about-btn-primary btn"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Sandra Wittek's resume in HTML format (opens in a new tab)"
+                  >HTML Resume</a
+                >
+                <a href="./contact.html" class="about-btn-secondary btn"
+                  >Let's Connect</a
+                >
+              </div>
             </div>
           </div>
+        <div class="about-image">
+          <!--About image (full width)-->
+          <picture class="about-img-container">
+            <source
+              srcset="./assets/images/small/webdesign_600w.jpg"
+              media="(max-width: 640px)"
+            />
+            <source
+              srcset="./assets/images/medium/webdesign_1000h.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/webdesign_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/webdesign_1500w.jpg"
+              alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
+              width="100%"
+            />
+          </picture>
         </div>
-        <!--About image (full width)-->
-        <picture class="about-img-container">
-          <source
-            srcset="./assets/images/small/webdesign_600w.jpg"
-            media="(max-width: 640px)"
-          />
-          <source
-            srcset="./assets/images/medium/webdesign_1000h.jpg"
-            media="(max-width: 1024px)"
-          />
-          <source
-            srcset="./assets/images/large/webdesign_1500w.jpg"
-            media="(min-width: 1025px)"
-            width="500px"
-          />
-          <img
-            src="./assets/images/medium/webdesign_1500w.jpg"
-            alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
-            width="100%"
-          />
-        </picture>
+      </div>
       </section>
     </main>
     <!---------------------- Footer section --------------------->
