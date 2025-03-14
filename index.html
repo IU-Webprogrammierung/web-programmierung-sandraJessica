@@ -3,119 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS stylesheet-->
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--Google Fonts Roboto mono-->
+    <!-- Google fonts sono, jersey 10 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sono:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <title>My Webdesign Journey</title>
+    <!-- Browser tab icon -->
+    <link rel="icon" href="./assets/images/small/logo_circle.png" />
+    <title>sw pixel sparks・Sandra Wittek・My Webdesign Journey</title>
+    <!-- Import the webpage's javascript file -->
+    <!-- Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/9bdcbb06dd.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- jQuery CDN-->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
   </head>
+  <!-- jQuery header component-->
+  <script src="./assets/js/header_loader.js" defer></script>
+  <!-- jQuery footer component-->
+  <script src="./assets/js/footer_loader.js" defer></script>
   <body>
-    <header class="header">
-      <section class="header-section">
-        <div class="header-container">
-          <!--Logo-->
-          <a href="./index.html" aria-label="Return to homepage">
-            <p class="logo">sw pixel sparks</p>
-          </a>
-          <!--Nav-items-->
-          <nav class="main-nav" aria-label="Main navigation">
-            <ul class="nav-container">
-              <li class="nav-item"><a href="./index.html">Home</a></li>
-              <li class="nav-item">
-                <a href="./projects.html">My Projects</a>
-              </li>
-              <li class="nav-item"><a href="./about.html">About Me</a></li>
-              <li class="nav-item"><a href="./contact.html">Contact Me</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!--Hamburger menu placeholder-->
-      </section>
-    </header>
-    <!--Main content-->
+    <!---------------------- Header section ---------------------->
+    <header></header>
+    <!---------------------- Main content ---------------------->
     <main>
-      <!--Hero-->
+      <!---------------------- Hero section ---------------------->
       <section class="hero">
-        <div class="hero-container">
-          <p class="eyebrow">Hi, my name is Sandra.</p>
-          <h1>
-            <span class="hero-heading-break1">Venturing</span>
-            <span class="hero-heading-break2">Into Digital</span> Design
-          </h1>
-          <p class="hero-intro">
-            I am a Media Informatics student, aiming to pursue a career in web
-            development. I am open to connecting for collaborative projects or
-            assignments.
-          </p>
-          <!--Hero-links-->
-          <div class="hero-btn-container">
-            <a href="./projects.html" class="hero-btn-primary btn"
-              >My Projects</a
-            >
-            <a href="./about.html" class="hero-btn-secondary btn">About Me</a>
+        <div class="hero-grid">
+          <div class="hero-container">
+            <div class="hero-content">
+              <p class="eyebrow">Hi, my name is Sandra.</p>
+              <h1>
+                <h1>
+                  <span class="hero-heading-mobile">
+                    <span>Venturing</span>
+                    <span>Into Digital</span>
+                    <span>Design</span>
+                  </span>
+                  <span class="hero-heading">
+                    <span>Venturing Into</span>
+                    <span>Digital Design</span>
+                  </span>
+                </h1>
+              </h1>
+              <p class="hero-intro">
+                I am a Media Informatics student with a focus on web development
+                and web design. I enjoy creating digital experiences that are
+                both functional and visually appealing while continuously
+                expanding my skills. I am always open to connecting for
+                collaborative projects, assignments or new opportunities.
+              </p>
+              <!-- Hero buttons -->
+              <div class="hero-btn-container">
+                <a href="./projects.html" class="hero-btn-primary btn"
+                  >My projects</a
+                >
+                <a href="./about.html" class="hero-btn-secondary btn"
+                  >About me</a
+                >
+              </div>
+            </div>
           </div>
-          <!--Hero-image-->
-          <picture class="hero-imgage-container">
-            <source
-              srcset="./assets/images/small/sandra_wittek_600w.jpg"
-              media="(max-width: 600px)"
-            />
-            <source
-              srcset="./assets/images/medium/sandra_wittek_1000w.jpg"
-              media="(max-width: 1024px)"
-            />
-            <source
-              srcset="./assets/images/large/sandra_wittek_1500w.jpg"
-              media="(min-width: 1025px)"
-              width="500px"
-            />
-            <img
-              src="./assets/images/medium/sandra_wittek_1000w.jpg"
-              alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
-              width="100%"
-            />
-          </picture>
+          <div class="hero-image">
+            <!-- Hero image (full width) -->
+            <picture class="hero-img-container">
+              <source
+                srcset="./assets/images/small/sandra_wittek_600w.jpg"
+                media="(max-width: 640px)"
+              />
+              <source
+                srcset="./assets/images/medium/sandra_wittek_1000h.jpg"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="./assets/images/large/sandra_wittek_1500w.jpg"
+                media="(min-width: 1025px)"
+                width="500px"
+              />
+              <img
+                src="./assets/images/medium/sandra_wittek_1500w.jpg"
+                alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
+                width="100%"
+              />
+            </picture>
+          </div>
         </div>
       </section>
-      <!--About-->
+      <!---------------------- About section ---------------------->
       <section class="about">
-        <div class="about-container">
-          <h2>Welcome Aboard!</h2>
-          <p>
-            As a flight attendant and Media Informatics student at IU
-            International University, I combine my practical experience in the
-            air with a strong passion for web development and design. These two
-            fields have taught me the importance of adaptability, attention to
-            detail and a proactive mindset. I'm dedicated to creating meaningful
-            digital experiences and am always open to collaborating on projects
-            or assignments, bringing creativity and problem-solving skills to
-            every opportunity.
-          </p>
+        <div class="about-grid">
+          <div class="about-container">
+            <div class="about-content">
+              <h2>Welcome Aboard!</h2>
+              <p class="about-p">
+                As a flight attendant and Media Informatics student at IU
+                International University of Applied Sciences, I combine my
+                practical experience in the air with a passion for web
+                development and design. Both fields have taught me the value of
+                adaptability, attention to detail and creative problem-solving.
+                When I’m not cruising at 30,000 feet, I enjoy refining my tech
+                skills and transforming ideas into functional
+                designs&nbsp;-&nbsp;one line at a time.
+              </p>
 
-          <!--About links-->
-          <div class="about-btn-container">
-            <a
-              href="https://sandrajessica.github.io/my-resume/"
-              class="about-btn-primary btn"
-              >HTML Resume</a
-            >
-            <a href="./contact.html" class="about-btn-secondary btn"
-              >Let's Connect</a
-            >
+              <!-- About buttons -->
+              <div class="about-btn-container">
+                <a
+                  href="https://sandrajessica.github.io/my-resume/"
+                  class="about-btn-primary btn"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Sandra Wittek's resume in HTML format (opens in a new tab)"
+                  >HTML resume</a
+                >
+                <a href="./contact.html" class="about-btn-secondary btn"
+                  >Let's connect</a
+                >
+              </div>
+            </div>
           </div>
-          <!--About-image-->
+        <div class="about-image">
+          <!--About image (full width)-->
           <picture class="about-img-container">
             <source
               srcset="./assets/images/small/webdesign_600w.jpg"
-              media="(max-width: 600px)"
+              media="(max-width: 640px)"
             />
             <source
-              srcset="./assets/images/medium/webdesign_1000w.jpg"
+              srcset="./assets/images/medium/webdesign_1000h.jpg"
               media="(max-width: 1024px)"
             />
             <source
@@ -124,66 +151,16 @@
               width="500px"
             />
             <img
-              src="./assets/images/medium/webdesign_1000w.jpg"
+              src="./assets/images/medium/webdesign_1500w.jpg"
               alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
               width="100%"
             />
           </picture>
         </div>
+      </div>
       </section>
     </main>
-    <!--Footer-->
-    <section class="footer">
-      <div class="footer-container">
-        <p>@ 2025 sw pixel sparks</p>
-        <!--Footer menu links-->
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">My Projects</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="./contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-        <p>Follow Me</p>
-        <!--Font Awesome social icons/ links-->
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sandra-wittek-680042202/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/sandraJessica"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/sandra.jess.5"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--Font Awesome Kit-->
-    <script
-      src="https://kit.fontawesome.com/9bdcbb06dd.js"
-      crossorigin="anonymous"
-    ></script>
+    <!---------------------- Footer section --------------------->
+    <footer></footer>
   </body>
 </html>

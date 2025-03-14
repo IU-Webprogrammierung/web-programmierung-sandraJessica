@@ -3,136 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS stylesheet-->
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--Google Fonts Roboto mono-->
+    <!-- Google fonts sono, jersey 10 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sono:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <title>Contact Me</title>
+    <!-- Browser tab icon -->
+    <link rel="icon" href="./assets/images/small/logo_circle.png" />
+    <title>Contact me</title>
+    <!-- Import the webpage's javascript file -->
+    <!-- Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/9bdcbb06dd.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- jQuery CDN -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
   </head>
+  <!-- jQuery header component-->
+  <script src="./assets/js/header_loader.js" defer></script>
+  <!-- jQuery footer component-->
+  <script src="./assets/js/footer_loader.js" defer></script>
   <body>
-    <!--Navigation elements-->
-    <header class="header">
-      <section class="header-section">
-        <div class="header-container">
-          <!--Logo-->
-          <a href="./index.html" aria-label="Return to homepage">
-            <p class="logo">sw pixel sparks</p>
-          </a>
-          <!--Nav-items-->
-          <nav class="main-nav" aria-label="Main navigation">
-            <ul class="nav-container">
-              <li class="nav-item"><a href="./index.html">Home</a></li>
-              <li class="nav-item">
-                <a href="./projects.html">My Projects</a>
-              </li>
-              <li class="nav-item"><a href="./about.html">About Me</a></li>
-              <li class="nav-item"><a href="./contact.html">Contact Me</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!--Hamburger menu placeholder-->
-      </section>
-    </header>
-    <!--Main content-->
+    <!---------------------- Header section ---------------------->
+    <header></header>
+    <!---------------------- Main content --------------------->
     <main>
+      <!---------------------- Contact section --------------------->
       <section class="contact">
         <div class="contact-container">
-          <!--Contact form hero-->
+          <!-- Contact form hero -->
           <div class="contact-content">
-            <h1>Let's Connect!</h1>
+            <h1 class="contact-h1">Let's Connect!</h1>
             <p>
               Got an idea or a question? Let’s make it happen! Use the form
-              below to reach out - whether you have a question, are looking to
-              collaborate or just want to chat about your favourite diving
-              spots. I’d love to hear from you!
+              below to reach out&nbsp;-&nbsp;whether you have a question, are
+              looking to collaborate or just want to chat about your favourite
+              diving spots. I’d love to hear from you!
             </p>
           </div>
-          <div class="form-container">
-            <!--Contact form-->
-            <form action="" method="get">
-              <!--Input field: First name-->
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required />
-              </div>
-              <!--Input field: Last name-->
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required />
-              </div>
-              <!--Input field: E-mail-->
-              <div class="form-group">
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <!--Textarea field: Message-->
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button class="form-button" type="submit" aria-label="Submit the form">Submit</button>
-            </form>
+          <div class="contact-grid">
+            <div class="form-container">
+              <!-- Contact form -->
+              <form action="" method="get">
+                <!-- Input field: First name -->
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <!-- Input field: Last name -->
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+                <!-- Input field: E-mail -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <!-- Textarea field: Message -->
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" required></textarea>
+                </div>
+                <button
+                  class="form-button"
+                  type="submit"
+                  aria-label="Submit the form"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact graphic -->
+            <div class="contact-image">
+              <picture class="contact-img-container">
+                <source
+                  srcset="./assets/images/small/message_600w.jpg"
+                  media="(max-width: 600px)"
+                />
+                <source
+                  srcset="./assets/images/medium/message_1000h.jpg"
+                  media="(max-width: 1024px)"
+                />
+                <source
+                  srcset="./assets/images/large/message_1500w.jpg"
+                  media="(min-width: 1025px)"
+                  width="500px"
+                />
+                <img
+                  src="./assets/images/medium/message_1500w.jpg"
+                  alt="Graphic of two speech bubbles against geographic pattern one a purple background."
+                  width="100%"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <!--Footer-->
-    <section class="footer">
-      <div class="footer-container">
-        <p>@ 2025 sw pixel sparks</p>
-        <!--Footer menu links-->
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">My Projects</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="./contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-        <p>Follow Me</p>
-        <!--Font Awesome social icons/ links-->
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sandra-wittek-680042202/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on LinkedIn (opens in a new tab)"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/sandraJessica"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on GitHub (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/sandra.jess.5"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Sandra Wittek on Facebook (opens in a new tab)"
-            >
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--Font Awesome Kit-->
-    <script
-      src="https://kit.fontawesome.com/9bdcbb06dd.js"
-      crossorigin="anonymous"
-    ></script>
+    <!---------------------- Footer section --------------------->
+    <footer></footer>
   </body>
 </html>
