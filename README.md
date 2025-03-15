@@ -1,6 +1,6 @@
 # 🎨 sw pixel sparks - Portfolio Website
 
-Welcome to my personal portfolio website! This site showcases my work, my professional journey, and my skills in web development.
+Welcome to my personal portfolio website! This site showcases my work, my professional journey and my skills in web development.
 
 ## 🛠️ Technologies Used
 - **HTML**  
@@ -12,7 +12,9 @@ Welcome to my personal portfolio website! This site showcases my work, my profes
 📦 project-folder
 ┣ 📂 assets
 ┃ ┣ 📂 images
-┃ ┗ 📂 css
+┃ ┗ 📂 js
+┣ 📂 components
+┣ 📂 css
 ┣ 📜 index.html
 ┣ 📜 about.html
 ┣ 📜 projects.html
@@ -21,7 +23,7 @@ Welcome to my personal portfolio website! This site showcases my work, my profes
 ┗ 📜 .gitignore
 
 ## 🖌️ Design Concept
-The portfolio follows a **Neo-Brutalism** design style, emphasizing bold contrasts, raw elements, and strong typography.
+The portfolio follows a **Neo-Brutalism** design and **Memphis-Design** style, emphasizing bold contrasts, raw colourful elements and strong typography.
 
 ## ✨ Features
 - Responsive design  
