@@ -1,8 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Roboto Mono"', "monospace"],
+              jersey: ['"Jersey 10"', "serif"],
+            },
+            colors: {
+              customPurple: "#ac86a6",
+              customBeige: "#f5f1e1",
+              customGreen: "#85c7aa",
+              customGrey: "rgba(0, 0, 0, 0.75)",
+            },
+            boxShadow: {
+              custom: "#030303 0.1rem 0.1rem 0",
+            },
+          },
+        },
+      };
+    </script>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Google fonts sono, jersey 10 -->
