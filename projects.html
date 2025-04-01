@@ -66,9 +66,17 @@
     <main>
       <!---------------------- Hero section --------------------->
       <section class="projects-hero">
-        <div class="projects-hero-container">
-          <h1 class="projects-h1">My Projects</h1>
-          <p class="projects-p">
+        <div
+          class="projects-hero-container mx-7 mt-12 md:mx-11 lg:mx-40 lg:mt-8 mb-11"
+        >
+          <h1
+            class="projects-h1 mt-3 mb-4 text-customGrey text-3xl md:text-4xl font-bold uppercase leading-snug md:leading-normal"
+          >
+            My Projects
+          </h1>
+          <p
+            class="projects-p text-customGrey text-xl md:text-2xl leading-snug sm:leading-normal"
+          >
             As part of a Udemy course on web development, I have worked on some
             projects that have helped me deepen my skills in front-end
             technologies. These projects include simple web designs and
@@ -82,11 +90,15 @@
       </section>
       <!---------------------- Projects section --------------------->
       <section class="projects">
-        <div class="projects-grid">
+        <div
+          class="projects-grid grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8"
+        >
           <!-- Project #1 -->
-          <div class="project-container">
+          <div
+            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
             <!-- Project image -->
-            <picture class="project-img-container">
+            <picture class="project-img-container mb-8">
               <source
                 srcset="./assets/images/small/scratch_600w.jpg"
                 media="(max-width: 600px)"
@@ -104,15 +116,20 @@
                 src="./assets/images/small/scratch_600w.jpg"
                 alt="Screenshot of the Mockup 'From Scratch to Match' – a playful cat matchmaking app."
                 width="100%"
+                class="rounded-t-lg"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">
+            <div class="project-content-container px-4">
+              <h2
+                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+              >
                 <span class="project-h2-span">From Scratch</span> to Match
               </h2>
-              <p>
+              <p
+                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+              >
                 "From Scratch to Match" is a web design concept for a fictional
                 app that connects cats with playmates. Designed with HTML, CSS,
                 and Bootstrap, the project presents a visual prototype of the
@@ -121,16 +138,16 @@
               </p>
 
               <!-- Project link -->
-              <div class="project-btn">
+              <div class="project-btn mt-6 mb-6">
                 <a
                   href="https://sandrajessica.github.io/from-scratch-to-match/"
-                  class="project-btn-link"
+                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's 'From Scratch to Match' web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="arrow-icon ml-2 transition-transform transform group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
@@ -138,16 +155,19 @@
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="20px" /></span
+                      width="20px"
+                      class="transition-transform transform hover:scale-110" /></span
                 ></a>
               </div>
             </div>
           </div>
 
           <!-- Project #2 -->
-          <div class="project-container">
+          <div
+            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
             <!-- Project Image -->
-            <picture class="project-img-container">
+            <picture class="project-img-container mb-8">
               <source
                 srcset="./assets/images/small/pricing_table_600w.jpg"
                 media="(max-width: 600px)"
@@ -165,29 +185,36 @@
                 src="./assets/images/medium/pricing_table_1000w.jpg"
                 alt=" Screenshot of a Responsive pricing table design."
                 width="100%"
+                class="rounded-t-lg"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">Pricing Table</h2>
-              <p>
+            <div class="project-content-container px-4">
+              <h2
+                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+              >
+                Pricing Table
+              </h2>
+              <p
+                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+              >
                 A responsive pricing table built with HTML, CSS and Bootstrap
                 adapts to different screen sizes using flexbox or media queries.
                 It ensures readability on all devices by adjusting layout,
                 styling and visibility dynamically.
               </p>
               <!-- Project link -->
-              <div class="project-btn">
+              <div class="project-btn mt-6 mb-6">
                 <a
                   href="https://sandrajessica.github.io/pricing-table-design/"
-                  class="project-btn-link"
+                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's pricing table web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="arrow-icon ml-2 transition-transform transform group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
@@ -195,17 +222,19 @@
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="
-                20px" /></span
+                      width="20px"
+                      class="transition-transform transform hover:scale-x-110" /></span
                 ></a>
               </div>
             </div>
           </div>
 
           <!-- Project #3 -->
-          <div class="project-container">
+          <div
+            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
             <!-- Project #3 image -->
-            <picture class="project-img-container">
+            <picture class="project-img-container mb-8">
               <source
                 srcset="./assets/images/small/portfolio_600w.jpg"
                 media="(max-width: 600px)"
@@ -223,13 +252,20 @@
                 src="./assets/images/medium/portfolio_1000w.jpg"
                 alt="Screenshot of the hero section of a portfolio website."
                 width="100%"
+                class="rounded-t-lg"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">Portfolio Page</h2>
-              <p>
+            <div class="project-content-container px-4">
+              <h2
+                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+              >
+                Portfolio Page
+              </h2>
+              <p
+                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+              >
                 A simple portfolio web design showcasing my skills and hobbies.
                 Built with HTML, CSS, it highlights my studies in Media
                 Informatics, hobbies, and passion for web design. The layout is
@@ -238,16 +274,16 @@
               </p>
 
               <!-- Project link -->
-              <div class="project-btn">
+              <div class="project-btn mt-6 mb-6">
                 <a
                   href="https://sandrajessica.github.io/sandrawittek/"
-                  class="project-btn-link"
+                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's portfolio web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="arrow-icon ml-2 transition-transform transform group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
@@ -255,8 +291,8 @@
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="
-                20px" /></span
+                      width="20px"
+                      class="transition-transform transform hover:scale-x-110" /></span
                 ></a>
               </div>
             </div>

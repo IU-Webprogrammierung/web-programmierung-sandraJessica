@@ -79,8 +79,7 @@ picture {
   }
 
   
-  .projects-hero,
-  .projects,
+
   .about-me-hero,
   .contact-content {
     margin-top: 3rem;
@@ -102,9 +101,6 @@ picture {
 
   /* Project-section mobile styles */
 
-  .project-container {
-    margin-bottom: 3rem;
-  }
 
   /* About-me-section mobile styles */
 
@@ -193,8 +189,6 @@ picture {
   }
 
 
-  .projects-hero,
-  .projects,
   .about-me-hero-container,
   .contact-content,
   .form-container {
@@ -203,7 +197,6 @@ picture {
   }
 
 
-  .projects-hero-container,
   .contact-container {
     margin-top: 3rem;
   }
@@ -249,9 +242,6 @@ picture {
 
   /* Projects-section tablet styles */
 
-  .project-container {
-    margin-bottom: 6rem;
-  }
 
   .projects-p {
     margin-top: 2rem;
@@ -321,8 +311,6 @@ picture {
 
 
  
-  .projects-hero,
-  .projects,
   .about-me-hero-container,
   .contact-content,
   .form-container {
@@ -331,21 +319,12 @@ picture {
   }
 
 
-  .projects-hero-container,
   .contact-container {
     margin-top: 4rem;
   }
 
   /* Button desktop styles */
 
-  .btn {
-    padding: 1.4rem 4rem;
-  }
-
-  .hero-btn-container,
-  .about-btn-container {
-    margin-top: 2rem;
-  }
 
   /* Header-section desktop styles */
 
@@ -369,9 +348,6 @@ picture {
     display: block;
   }
 
-  .projects-hero-container {
-    margin-bottom: 5rem;
-  }
 
   .projects-grid {
     display: grid;
@@ -502,63 +478,10 @@ picture {
 
 /*--------------------- About styling (index.html) ---------------------*/
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-container > p {
-  margin-bottom: 3rem;
-}
 
 /*--------------------- Projects styling (projects.html) ---------------------*/
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.2rem 0.2rem 0;
-}
 
-.project-img-container {
-  margin-bottom: 2rem;
-}
-
-.project-img-container img {
-  border-radius: 0.2rem 0.2rem 0 0;
-}
-
-.project-content-container {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.project-btn {
-  position: relative;
-  margin-top: 1.3rem;
-  margin-bottom: 1.3rem;
-}
-
-.arrow-icon {
-  position: absolute;
-  top: 0.3rem;
-  margin-left: 0.4rem;
-}
-
-.project-btn-link {
-  text-decoration: none;
-}
-
-.project-btn-link:hover {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.project-btn-link:hover .arrow-icon {
-  transform: scaleX(1.3);
-}
 
 /*--------------------- About-Me styling (about.html) ---------------------*/
 
