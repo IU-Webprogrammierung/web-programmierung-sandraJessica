@@ -59,7 +59,7 @@
   <script src="./assets/js/header_loader.js" defer></script>
   <!-- jQuery footer component-->
   <script src="./assets/js/footer_loader.js" defer></script>
-  <body>
+  <body class="m-0 p-0 box-border">
     <!---------------------- Header section ---------------------->
     <header></header>
     <!---------------------- Main content --------------------->
@@ -91,14 +91,14 @@
       <!---------------------- Projects section --------------------->
       <section class="projects">
         <div
-          class="projects-grid grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8"
+          class="projects-grid grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-11 lg:gap-0 my-10 md:my-12 lg:mx-40 lg:my-16"
         >
           <!-- Project #1 -->
           <div
-            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+            class="project-container mx-7 md:mx-11 lg:ml-0 lg:mr-6 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
           >
             <!-- Project image -->
-            <picture class="project-img-container mb-8">
+            <picture class="project-img-container mb-8 block leading-none">
               <source
                 srcset="./assets/images/small/scratch_600w.jpg"
                 media="(max-width: 600px)"
@@ -116,19 +116,19 @@
                 src="./assets/images/small/scratch_600w.jpg"
                 alt="Screenshot of the Mockup 'From Scratch to Match' – a playful cat matchmaking app."
                 width="100%"
-                class="rounded-t-lg"
+                class="rounded-t-lg w-full h-auto object-cover"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container px-4">
+            <div class="project-content-container flex flex-col h-full px-4">
               <h2
-                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+                class="project-h2 text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
               >
                 <span class="project-h2-span">From Scratch</span> to Match
               </h2>
               <p
-                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
               >
                 "From Scratch to Match" is a web design concept for a fictional
                 app that connects cats with playmates. Designed with HTML, CSS,
@@ -138,10 +138,10 @@
               </p>
 
               <!-- Project link -->
-              <div class="project-btn mt-6 mb-6">
+              <div class="project-btn mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/from-scratch-to-match/"
-                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
+                  class="project-btn-link text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's 'From Scratch to Match' web design project (opens in a new tab)"
@@ -164,10 +164,10 @@
 
           <!-- Project #2 -->
           <div
-            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+            class="project-container mx-7 md:mx-11 lg:ml-0 lg:mr-6 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
           >
             <!-- Project Image -->
-            <picture class="project-img-container mb-8">
+            <picture class="project-img-container mb-8 block leading-none">
               <source
                 srcset="./assets/images/small/pricing_table_600w.jpg"
                 media="(max-width: 600px)"
@@ -185,19 +185,19 @@
                 src="./assets/images/medium/pricing_table_1000w.jpg"
                 alt=" Screenshot of a Responsive pricing table design."
                 width="100%"
-                class="rounded-t-lg"
+                class="rounded-t-lg w-full h-auto object-cover"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container px-4">
+            <div class="project-content-container flex flex-col h-full px-4">
               <h2
-                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+                class="project-h2 text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
               >
                 Pricing Table
               </h2>
               <p
-                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
               >
                 A responsive pricing table built with HTML, CSS and Bootstrap
                 adapts to different screen sizes using flexbox or media queries.
@@ -205,10 +205,10 @@
                 styling and visibility dynamically.
               </p>
               <!-- Project link -->
-              <div class="project-btn mt-6 mb-6">
+              <div class="project-btn mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/pricing-table-design/"
-                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
+                  class="project-btn-link text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's pricing table web design project (opens in a new tab)"
@@ -231,10 +231,10 @@
 
           <!-- Project #3 -->
           <div
-            class="project-container mx-7 md:mx-11 lg:ml-40 lg:mr-3 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+            class="project-container mx-7 md:mx-11 lg:ml-0 lg:mr-6 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
           >
             <!-- Project #3 image -->
-            <picture class="project-img-container mb-8">
+            <picture class="project-img-container mb-8 block leading-none">
               <source
                 srcset="./assets/images/small/portfolio_600w.jpg"
                 media="(max-width: 600px)"
@@ -252,19 +252,19 @@
                 src="./assets/images/medium/portfolio_1000w.jpg"
                 alt="Screenshot of the hero section of a portfolio website."
                 width="100%"
-                class="rounded-t-lg"
+                class="rounded-t-lg w-full h-auto object-cover"
               />
             </picture>
 
             <!-- Project content -->
-            <div class="project-content-container px-4">
+            <div class="project-content-container flex flex-col h-full px-4">
               <h2
-                class="project-h2 text-xl md:text-2xl lg:text-3xl font-bold mb-4"
+                class="project-h2 text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
               >
                 Portfolio Page
               </h2>
               <p
-                class="text-customGrey text-lg md:text-xl lg:text-2xl leading-snug md:leading-normal mb-4"
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
               >
                 A simple portfolio web design showcasing my skills and hobbies.
                 Built with HTML, CSS, it highlights my studies in Media
@@ -274,10 +274,10 @@
               </p>
 
               <!-- Project link -->
-              <div class="project-btn mt-6 mb-6">
+              <div class="project-btn mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/sandrawittek/"
-                  class="project-btn-link text-lg font-semibold text-customGrey hover:text-black group flex items-center"
+                  class="project-btn-link text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's portfolio web design project (opens in a new tab)"

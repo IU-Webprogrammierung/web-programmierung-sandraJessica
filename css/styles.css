@@ -4,34 +4,12 @@
 - Applies the border-box model to ensure padding and border are included in element dimensions.  
 - Prevents unexpected spacing issues and provides a consistent starting point for styling.  */
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  box-sizing: border-box;
-}
 
-html,
-body {
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /*--------------------- Tailwind-Components ---------------------*/
 
 /* Font styling */
 
-
-h2 {
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.75);
-}
 
 
 /* Basic button styling */
@@ -43,10 +21,6 @@ p {
 
 /* Basic picture tag reset */
 
-picture {
-  display: block;
-  line-height: 0;
-}
 
 /*--------------------- Media-Queries ---------------------*/
 
@@ -55,32 +29,9 @@ picture {
 @media (max-width: 640px) {
   /* Basic mobile styles */
 
-  h1 {
-    font-size: 3.2rem;
-    line-height: 1.3;
-  }
 
-  h2 {
-    font-size: 2.1rem;
-    line-height: 1.3;
-  }
-
-  p,
-  .eyebrow {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 1.2rem;
-  }
-
-  .projects-h1,
-  .about-me-h1,
-  .contact-h1 {
-    font-size: 2.8rem;
-  }
 
   
-
-  .about-me-hero,
   .contact-content {
     margin-top: 3rem;
     margin-left: 1.8rem;
@@ -104,33 +55,6 @@ picture {
 
   /* About-me-section mobile styles */
 
-  .about-me-container {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 column layout for mobile screens */
-    padding: 0;
-    margin: 0;
-  }
-
-  .about-me-intro {
-    margin-bottom: 2rem;
-  }
-
-  .about-me-h1 {
-    margin-bottom: 1.2rem;
-  }
-
-  .about-me-content-container {
-    padding: 4rem 2rem;
-    margin: 1.8rem;
-  }
-
-  .about-me-img-container {
-    margin: 1.8rem;
-  }
-
-  .about-me-img-container img {
-    display: block;
-  }
 
   /* Contact-section mobile styles */
 
@@ -163,33 +87,10 @@ picture {
 /*--------------------- Tablet Media-Query ---------------------*/
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  /* Basic tables styles */
-
-  h1 {
-    font-size: 4.2rem;
-    line-height: 1.3;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-    line-height: 1.4;
-  }
-
-  p,
-  .eyebrow {
-    font-size: 1.8rem;
-    line-height: 1.5;
-  }
-
-  .projects-h1,
-  .about-me-h1,
-  .contact-h1 {
-    font-size: 3.2rem;
-  }
+  /* basic tablet styles */
 
 
-  .about-me-hero-container,
+
   .contact-content,
   .form-container {
     margin-left: 3.2rem;
@@ -197,70 +98,25 @@ picture {
   }
 
 
-  .contact-container {
-    margin-top: 3rem;
-  }
 
   /* Button tablet styles */
 
 
 
-  .project-btn-link {
-    font-size: 1.8rem;
-  }
 
   /* Header-section tablet styles */
 
 
   /* Hero-section tablet styles */
 
-  .about-me-hero-container {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .about-me-intro {
-    margin-top: 2rem;
-  }
-
-  .about-content {
-    margin-top: 6rem;
-  }
-
-  .hero-img-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-img-container img,
-  .about-img-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 
   /* Projects-section tablet styles */
 
 
-  .projects-p {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  div.project-content-container {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-  }
 
   /* About-me-section tablet styles */
 
-  .about-me-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-    gap: 30px;
-    margin: 0 3rem;
-  }
+
 
   /* Contact-section tablet styles */
 
@@ -298,30 +154,14 @@ picture {
 
 
 
-  h1 {
-    font-size: 4.8rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-  }
 
 
-
- 
-  .about-me-hero-container,
   .contact-content,
   .form-container {
     margin-left: 10rem;
     margin-right: 10rem;
   }
 
-
-  .contact-container {
-    margin-top: 4rem;
-  }
 
   /* Button desktop styles */
 
@@ -336,74 +176,10 @@ picture {
 
   /* Projects-section desktop styles */
 
-  .projects-h1 {
-    font-size: 3.6rem;
-  }
-
-  .project-h2 {
-    font-size: 2.4rem;
-  }
-
-  .project-h2-span {
-    display: block;
-  }
-
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Drei gleich große Spalten */
-    gap: 3rem; /* Abstand zwischen den Projekten */
-    width: 100%;
-  }
-
-  .project-container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-
-  .project-img-container img {
-    width: 100%;
-    height: 25rem;
-    border-radius: 0.8rem;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .project-content-container {
-    margin-top: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .project-btn-link {
-    font-size: 1.8rem;
-  }
 
   /* About-me-section desktop styles */
 
-  .about-me-h1 {
-    font-size: 3.6rem;
-  }
 
-  .about-me-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 30px;
-    margin: 0 10rem;
-  }
-
-  .about-me-hero-container {
-    margin-bottom: 4rem;
-  }
-
-  .about-me-h2-span {
-    display: block;
-  }
 
   /* Contact-section desktop styles */
 
@@ -485,80 +261,12 @@ picture {
 
 /*--------------------- About-Me styling (about.html) ---------------------*/
 
-.about-me-img-container {
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.2rem 0.2rem 0;
-}
 
-.about-me-content-container {
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.2rem 0.2rem 0;
-  background-color: #f5f1e1;
-}
-
-.about-me-content-container {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-
-.about-me-img-container img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 
 /*--------------------- Contact styling (contact.html) ---------------------*/
 
-.form-group {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-bottom: 1rem;
-}
 
-.form-container {
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  box-shadow: #030303 0.2rem 0.2rem 0;
-  background-color: #e4e2d9;
-}
 
-.contact-content {
-  padding-bottom: 3rem;
-}
-
-.form-group textarea {
-  width: 100%;
-  resize: vertical;
-  border: solid black;
-  margin-bottom: 0.5rem;
-  padding: 10px 15px;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  background-color: #f5f1e1;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: bold;
-}
-
-.form-group input {
-  border: solid black;
-  border-width: 0.125em;
-  border-radius: 0.4rem;
-  margin-bottom: 0.3rem;
-  padding-left: 15px;
-  background-color: #f5f1e1;
-}
 
 input:focus,
 textarea:focus {

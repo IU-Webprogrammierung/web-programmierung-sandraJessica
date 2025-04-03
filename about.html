@@ -59,22 +59,34 @@
   <script src="./assets/js/header_loader.js" defer></script>
   <!-- jQuery footer component-->
   <script src="./assets/js/footer_loader.js" defer></script>
-  <body>
+  <body class="m-0 p-0 box-border">
     <!---------------------- Header section ---------------------->
     <header></header>
     <!---------------------- Main content --------------------->
     <main>
       <!---------------------- Hero section ---------------------->
       <section class="about-me-hero">
-        <div class="about-me-hero-container">
-          <h1 class="about-me-h1">From Skies To Screens</h1>
-          <p class="about-me-intro">My Journey into Web Development</p>
+        <div class="mx-7 mt-12 md:mx-11 lg:mx-40 lg:mt-8 mb-3 md:mb-11">
+          <h1
+            class="about-me-h1 mt-3 mb-4 text-customGrey text-3xl md:text-4xl font-bold uppercase leading-snug md:leading-normal"
+          >
+            From Skies To Screens
+          </h1>
+          <p
+            class="about-me-intro text-customGrey text-xl md:text-2xl leading-snug sm:leading-normal"
+          >
+            My Journey into Web Development
+          </p>
         </div>
       </section>
       <section class="about-me">
-        <div class="about-me-container">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-7 lg:gap-7 m-[1.8rem] md:mx-11 lg:mx-40 mb-16"
+        >
           <!-- About-me graphic #1 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/scenery_600w.jpg"
               media="(max-width: 600px)"
@@ -92,12 +104,21 @@
               src="./assets/images/medium/scenery_1000w.jpg"
               alt="Graphic of mountains with abstract geometric waves on a purple background."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
-          <div class="about-me-content-container">
+          <div
+            class="border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303] bg-customBeige flex justify-center items-center text-left p-[4rem_2rem]"
+          >
             <div class="about-me-content">
-              <h2 class="about-me-h2">Roots and Horizons</h2>
-              <p class="about-me-p">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
+                Roots and Horizons
+              </h2>
+              <p
+                class="text-customGrey text-lg sm:text-xl leading-snug sm:leading-normal"
+              >
                 I grew up in beautiful Bavaria, near Lake Chiemsee, where I
                 developed a love for nature and hospitality. I pursued my
                 education in Hotel- and Tourism Management at the School of
@@ -110,7 +131,9 @@
             </div>
           </div>
           <!-- About-me photo #1 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/chiemsee_600w.jpg"
               media="(max-width: 600px)"
@@ -128,11 +151,14 @@
               src="./assets/images/medium/chiemsee_1000w.jpg"
               alt="Picture with a view of Lake Chiemsee at sunset."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
           <!-- About-me photo #2 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/mountain_600w.jpg"
               media="(max-width: 600px)"
@@ -150,11 +176,14 @@
               src="./assets/images/medium/mountain_1000w.jpg"
               alt="Picture with Sandra Wittek's back view gazing at the peak of Kampenwand mountain."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
           <!-- About-me graphic #2 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/cabin_crew_600w.jpg"
               media="(max-width: 600px)"
@@ -172,15 +201,22 @@
               src="./assets/images/medium/cabin_crew_1000w.jpg"
               alt="Graphic of a small suitcase in front of an abstract globe on a mint green background."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
-          <div class="about-me-content-container">
+          <div
+            class="border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303] bg-customBeige flex justify-center items-center text-left p-[4rem_2rem]"
+          >
             <div class="about-me-content">
-              <h2 class="about-me-h2">
-                <span class="about-me-h2-span">From Trolleys</span> to Code
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
+                <span class="block">From Trolleys</span> to Code
               </h2>
-              <p class="about-me-p">
+              <p
+                class="text-customGrey text-lg sm:text-xl leading-snug sm:leading-normal"
+              >
                 Since 2014, I’ve been a flight attendant, moving trolleys up and
                 down the aisles. Now, I’m moving boxes - but this time, it’s all
                 about code instead of snacks! My passion for web technologies
@@ -193,7 +229,9 @@
           </div>
 
           <!-- About-me photo #3 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/crew_me_600w.jpg"
               media="(max-width: 600px)"
@@ -211,18 +249,25 @@
               src="./assets/images/medium/crew_me_1000w.jpg"
               alt="Picture of Sandra Wittek sitting inside an aircraft turbine, wearing her flight attendant uniform."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
-          <div class="about-me-content-container">
+          <div
+            class="border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303] bg-customBeige flex justify-center items-center text-left p-[4rem_2rem]"
+          >
             <div class="about-me-content">
-              <h2 class="about-me-h2">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
                 <span class="about-me-h2-span"
                   >Exploring New Dimensions in</span
                 >
                 Web Design
               </h2>
-              <p class="about-me-p">
+              <p
+                class="text-customGrey text-lg sm:text-xl leading-snug sm:leading-normal"
+              >
                 I’m excited to expand my skills in web design and development
                 and I'm looking forward to exploring the creative and technical
                 aspects of the field in more depth. This new journey is
@@ -234,7 +279,9 @@
           </div>
 
           <!-- About-me graphic #3 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/laptop_600w.jpg"
               media="(max-width: 600px)"
@@ -252,11 +299,14 @@
               src="./assets/images/medium/laptop_1000w.jpg"
               alt="Graphic of a purple laptop displaying big angle brackets on the screen, set against a salmon-pink background."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
           <!-- About-me photo #4 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/cpt_600w.jpg"
               media="(max-width: 600px)"
@@ -274,11 +324,14 @@
               src="./assets/images/medium/cpt_1000w.jpg"
               alt="Picture of Sandra Wittek in front of a mountain landscape with purple flowers in cape town."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
           <!-- About-me graphic #4 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/heart_600w.jpg"
               media="(max-width: 600px)"
@@ -296,10 +349,13 @@
               src="./assets/images/medium/heart_1000w.jpg"
               alt="Graphic of a speech bubble with a pink heart, set against bright rays on a mint green background."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
           <!-- About-me photo #3 -->
-          <picture class="about-me-img-container">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/sailing_600w.jpg"
               media="(max-width: 600px)"
@@ -317,15 +373,22 @@
               src="./assets/images/medium/sailing_1000w.jpg"
               alt="Picture of a mountain reflected in a calm lake, creating a mirror-like view."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
 
-          <div class="about-me-content-container">
+          <div
+            class="border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303] bg-customBeige flex justify-center items-center text-left p-[4rem_2rem]"
+          >
             <div class="about-me-content">
-              <h2 class="about-me-h2">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
                 <span class="about-me-h2-span">Nature, Music</span> &amp Diving
               </h2>
-              <p class="about-me-p">
+              <p
+                class="text-customGrey text-lg sm:text-xl leading-snug sm:leading-normal"
+              >
                 Besides work and studying, I love spending time in nature,
                 playing the electric bass, and going scuba diving in my free
                 time. These activities help me recharge and stay balanced as I
@@ -335,7 +398,9 @@
           </div>
 
           <!-- About-me photo #3 -->
-          <picture class="about-me-img-container scuba">
+          <picture
+            class="block leading-none border border-black border-[0.125em] rounded-[0.4rem] shadow-[0.2rem_0.2rem_0_#030303]"
+          >
             <source
               srcset="./assets/images/small/scuba_600w.jpg"
               media="(max-width: 600px)"
@@ -353,6 +418,7 @@
               src="./assets/images/medium/scuba_1000w.jpg"
               alt="Picture Sandra Wittek and her husband scuba diving towards a swarm of fish."
               width="100%"
+              class="object-cover h-full w-full"
             />
           </picture>
         </div>
