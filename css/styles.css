@@ -31,12 +31,6 @@
 
 
 
-  
-  .contact-content {
-    margin-top: 3rem;
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
-  }
 
   /* Button mobile styles */
 
@@ -58,27 +52,8 @@
 
   /* Contact-section mobile styles */
 
-  label {
-    font-size: 1.4rem;
-  }
 
-  .form-group input {
-    height: 3rem;
-  }
 
-  .form-group textarea {
-    min-height: 10rem;
-  }
-
-  .form-container {
-    padding: 2rem;
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
-  }
-
-  .contact-img-container img {
-    margin-top: 3rem;
-  }
 
   /* Footer-section mobile styles */
 
@@ -89,13 +64,6 @@
 @media (min-width: 641px) and (max-width: 1024px) {
   /* basic tablet styles */
 
-
-
-  .contact-content,
-  .form-container {
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-  }
 
 
 
@@ -120,28 +88,9 @@
 
   /* Contact-section tablet styles */
 
-  label {
-    font-size: 1.8rem;
-  }
 
 
-  .form-group input {
-    height: 3.5rem;
-  }
 
-  .form-group textarea {
-    min-height: 15rem;
-  }
-
-  .form-container {
-    padding: 4rem;
-    margin-bottom: 5rem;
-    margin-right: 14rem;
-  }
-
-  .contact-img-container img {
-    margin-top: 3rem;
-  }
 
   /* Footer-section tablet styles */
 
@@ -152,15 +101,6 @@
 @media (min-width: 1025px) {
   /* Basic desktop styles */
 
-
-
-
-
-  .contact-content,
-  .form-container {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
 
 
   /* Button desktop styles */
@@ -183,52 +123,15 @@
 
   /* Contact-section desktop styles */
 
-  .contact-h1 {
-    font-size: 3.6rem;
-  }
-
-  .contact-grid {
-    display: grid;
-    display: grid;
-    grid-template-columns: minmax(50rem, 2fr) 1fr; /* 2 columns layout */
-    gap: 1rem;
-    align-items: center;
-    align-content: end;
-  }
-
-  .contact-image {
-    justify-self: end;
-    margin-right: 10rem;
-  }
-
-  .form-container {
-    margin-right: 4rem;
-  }
-
-  label {
-    font-size: 1.8rem;
-  }
 
 
-  .form-group input {
-    height: 3.5rem;
-  }
 
-  .form-group textarea {
-    min-height: 15rem;
-  }
 
-  .form-container {
-    padding: 4rem;
-  }
 
-  .contact-img-container img {
-    border-radius: 0.8rem;
-  }
 
-  .contact-content {
-    margin-bottom: 4rem;
-  }
+ 
+
+
 }
 
   /* Footer-section desktop styles */
@@ -268,12 +171,6 @@
 
 
 
-input:focus,
-textarea:focus {
-  /* Removes standard-focus style */
-  outline: none;
-  border-color: #85c7aa;
-}
 
 
 
