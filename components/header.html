@@ -1,26 +1,79 @@
-<section class="header-section">
-  <div class="flex items-center justify-between w-full h-28 px-7 md:px-11 lg:px-40">
+<section class="header-section lg:bg-transparent">
+  <nav
+    class="flex items-center justify-between lg:justify-end px-7 md:px-11 lg:px-40 h-28"
+    aria-label="Main navigation"
+  >
     <!-- Logo -->
-    <a href="./index.html" class="logo-link" aria-label="Return to homepage">
-      <p class="font-jersey text-black text-2xl md:text-3xl lg:text-3xl whitespace-nowrap">sw pixel sparks</p>
+    <a
+      href="./index.html"
+      class="logo-link lg:mr-auto"
+      aria-label="Return to homepage"
+    >
+      <p
+        class="font-jersey text-black text-2xl md:text-3xl lg:text-3xl whitespace-nowrap"
+      >
+        sw pixel sparks
+      </p>
     </a>
-    <!-- Main nav-menu -->
-    <nav class="main-nav-menu" aria-label="Main navigation">
-      <!-- Hamburger menu -->
-      <div class="hamburger-container">
-        <div class="flex flex-col items-center justify-around bg-customGreen w-12 h-12 rounded border-2 border-solid border-black shadow-custom lg:hidden xl:hidden 2xl:hidden cursor-pointer">
-          <div <i class="fa-solid fa-bars fa-2xl"></i></div>
+
+    <!-- Main navigation links -->
+    <div class="dropdown-container">
+      <div
+        class="dropdown-menu hidden lg:block absolute top-[15%] left-0 right-0 bg-customGreen w-full py-6 flex flex-col items-center lg:static  lg:bg-transparent lg:min-h-[auto] border-black border-t-2 border-b-2 rounded-lg shadow-[2px_2px_0_#030303] lg:border-t-none lg:border-b-none lg:shadow-none lg:border-none"
+      >
+        <ul
+          class="nav-container flex-col flex-nowrap gap-8 whitespace-nowrap lg:flex lg:flex-row"
+        >
+          <li class="nav-item relative group font-roboto-mono text-base font-normal pt-14 pb-6 lg:pt-0 lg:pb-0">
+            <a href="./index.html" class="relative text-customGrey text-xl md:text-2xl transition-colors duration-300 group-hover:text-black">Home
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="nav-item relative group font-roboto-mono text-base font-normal pb-6 lg:pb-0">
+            <a href="./projects.html" class="relative text-customGrey text-xl md:text-2xl transition-colors duration-300 group-hover:text-black">My Projects
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="nav-item relative group font-roboto-mono font-normal pb-6 lg:pb-0">
+            <a href="./about.html" class="relative text-customGrey text-xl md:text-2xl transition-colors duration-300 group-hover:text-black">About Me
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li class="nav-item relative group font-roboto-mono font-normal pb-14 lg:pb-0">
+            <a href="./contact.html" class="relative text-customGrey text-xl md:text-2xl transition-colors duration-300 group-hover:text-black">Contact Me
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Hamburger menu -->
+    <div class="hamburger-container">
+      <div class="flex flex-col items-center justify-around bg-customGreen w-12 h-12 rounded border-2 border-solid border-black shadow-custom lg:hidden xl:hidden 2xl:hidden cursor-pointer">
+        <div class="toggle-button">
+          <i class="fa-solid fa-bars fa-2xl"> </i>
+          <i class="fas fa-times fa-2xl hidden"></i>
         </div>
       </div>
-      <!-- Main navigation links -->
-      <ul class="nav-container flex flex-nowrap gap-8 space-x-3 whitespace-nowrap hidden lg:flex">
-        <li class="nav-item relative group font-roboto-mono text-base font-normal"><a href="./index.html" class="relative text-customGrey text-xl transition-colors duration-300 group-hover:text-black">Home<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span></a></li>
-        <li class="nav-item relative group font-roboto-mono text-base font-normal">
-          <a href="./projects.html" class="relative text-customGrey text-xl transition-colors duration-300 group-hover:text-black">My Projects <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span></a>
-        </li>
-        <li class="nav-item relative group font-roboto-mono font-normal"><a href="./about.html" class="relative text-customGrey text-xl transition-colors duration-300 group-hover:text-black">About Me <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span></a></li>
-        <li class="nav-item relative group font-roboto-mono font-normal"><a href="./contact.html" class="relative text-customGrey text-xl transition-colors duration-300 group-hover:text-black">Contact Me <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-customGrey transition-all duration-300 group-hover:w-full"></span></a></li>
-      </ul>
-    </nav>
-  </div>
-</section>
+    </div>
+    
+    <script>
+      const toggleBtn = document.querySelector(".toggle-button");
+      const dropdown = document.querySelector(".dropdown-menu");
+    
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("hidden");  // Toggle visibility of the dropdown menu
+        toggleBtn.classList.toggle("active");
+    
+        // Toggle visibility of the bars and cross icon
+        const barsIcon = toggleBtn.querySelector(".fa-bars");
+        const timesIcon = toggleBtn.querySelector(".fa-times");
+    
+        // When bars are visible, hide them and show the times icon
+        barsIcon.classList.toggle("hidden");
+        timesIcon.classList.toggle("hidden");
+      });
+    </script>
+
+
