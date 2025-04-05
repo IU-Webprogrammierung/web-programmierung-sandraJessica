@@ -4,9 +4,8 @@ Welcome to my personal portfolio website! This site showcases my work, my profes
 
 ## 🛠️ Technologies Used
 - **HTML**  
-- **CSS**  
-- **JavaScript** (to be decided - but definitely in the future)  
-- **Bootstrap / Tailwind CSS** (to be decided)  
+- **Teilwind CSS**  
+- **JavaScript**
 
 ## 📁 Project Structure
 📦 project-folder
@@ -14,7 +13,6 @@ Welcome to my personal portfolio website! This site showcases my work, my profes
 ┃ ┣ 📂 images
 ┃ ┗ 📂 js
 ┣ 📂 components
-┣ 📂 css
 ┣ 📜 index.html
 ┣ 📜 about.html
 ┣ 📜 projects.html
@@ -40,7 +38,7 @@ The portfolio follows a **Neo-Brutalism** design and **Memphis-Design** style, e
 Links to the live version of the project will be provided in the future.
 
 🔮 Future Plans
-- Adding interactive elements with JavaScript
+- Adding more interactive elements with JavaScript
 - Further optimizing responsiveness
 - Enhancing accessibility
 

@@ -10,6 +10,10 @@
       tailwind.config = {
         theme: {
           extend: {
+            screens: {
+              "custom-md": "850px", // Breakpoint at 850px
+              "custom-xl": "1600px", // Breakpoint at 1600px
+            },
             fontFamily: {
               mono: ['"Roboto Mono"', "monospace"],
               jersey: ['"Jersey 10"', "serif"],
@@ -30,8 +34,7 @@
         },
       };
     </script>
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <!-- Google fonts sono, jersey 10 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,7 +84,7 @@
       </section>
       <section class="about-me">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-7 lg:gap-7 m-[1.8rem] md:mx-11 lg:mx-40 mb-16"
+          class="grid grid-cols-1 custom-md:grid-cols-2 custom-xl:grid-cols-3 gap-10 custom-md:gap-7 m-[1.8rem] md:mx-11 lg:mx-40 mb-16"
         >
           <!-- About-me graphic #1 -->
           <picture
