@@ -93,6 +93,31 @@
             >
               <!-- Contact form -->
               <form action="" method="get">
+                <!-- Custom Alert Modal -->
+                <div
+                  id="custom-alert"
+                  class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                >
+                  <div
+                    class="bg-[#e4e2d9] p-6 rounded-lg shadow-lg w-[90%] max-w-md text-center border-2 border-black"
+                  >
+                    <h2 class="text-xl md:text-2xl font-bold mb-4">
+                      Feature Not Available
+                    </h2>
+                    <p class="mb-6 text-xl md:text-2xl">
+                      This Feature is not implemented yet. It will be added
+                      soon!
+                    </p>
+                    <button
+                      id="close-alert"
+                      type="button"
+                      class="bg-customGreen hover:bg-customHoverGreen text-lg md:text-xl text-customGrey font-bold py-2 px-4 rounded border-2 border-black shadow-[2px_2px_0_theme(colors.customGrey)] hover:shadow-[2px_2px_0_black] transition-transform duration-300 hover:-translate-y-1 hover:text-black"
+                    >
+                      Ok
+                    </button>
+                  </div>
+                </div>
+
                 <!-- Input field: First name -->
                 <div class="form-group grid grid-cols-1 pb-4">
                   <label
@@ -194,5 +219,21 @@
     </main>
     <!---------------------- Footer section --------------------->
     <footer></footer>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const alertBox = document.getElementById("custom-alert");
+        const closeBtn = document.getElementById("close-alert");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Verhindert tatsächlichen Submit
+          alertBox.classList.remove("hidden"); // Zeigt das Alert-Fenster
+        });
+
+        closeBtn.addEventListener("click", function () {
+          alertBox.classList.add("hidden"); // Versteckt das Alert-Fenster
+        });
+      });
+    </script>
   </body>
 </html>
