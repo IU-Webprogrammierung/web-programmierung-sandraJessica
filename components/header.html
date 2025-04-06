@@ -80,13 +80,18 @@
     </button>
 
     
+    <!-- Dropdown menu, hamburger & close icons and sticky menu animations -->
     <script>
       const toggleBtn = document.querySelector(".toggle-button");
       const dropdown = document.querySelector(".dropdown-menu");
+      const header = document.querySelector(".header");
 
       toggleBtn.addEventListener("click", () => {
         dropdown.classList.toggle("hidden"); // Toggle visibility of the dropdown menu
-        toggleBtn.classList.toggle("active");
+        header.classList.toggle("sticky"); // Toggle sticky menu
+        header.classList.toggle("top-0");
+
+        
 
         // Toggle visibility of the hamburger bars and close icon
         const barsIcon = toggleBtn.querySelector(".fa-bars");
@@ -97,7 +102,7 @@
         closeIcon.classList.toggle("hidden");
       });
 
-       // Aria-label change animation
+       // --- Aria-label change animation ---
       const toggleButton = document.getElementById("menu-toggle"); // Button
       const iconOpen = document.getElementById("icon-open");  // Hamburger icon
       const iconClose = document.getElementById("icon-close"); // Close icon
