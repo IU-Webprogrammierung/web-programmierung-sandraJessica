@@ -1,10 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "custom-lg": "1245px", // Breakpoint from 1245px
+            },
+            fontFamily: {
+              mono: ['"Roboto Mono"', "monospace"],
+              jersey: ['"Jersey 10"', "serif"],
+            },
+            colors: {
+              customPurple: "#ac86a6",
+              customBeige: "#f5f1e1",
+              customGreen: "#85c7aa",
+              customGrey: "rgba(0, 0, 0, 0.75)",
+              customHoverPurple: "#a2789b",
+              customHoverBeige: "#f7f4ea",
+              customHoverGreen: "#7aba9e",
+            },
+            boxShadow: {
+              custom: "#030303 0.1rem 0.1rem 0",
+            },
+          },
+        },
+      };
+    </script>
+
     <!-- Google fonts sono, jersey 10 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,29 +63,42 @@
   <script src="./assets/js/header_loader.js" defer></script>
   <!-- jQuery footer component-->
   <script src="./assets/js/footer_loader.js" defer></script>
-  <body>
+  <body class="m-0 p-0 box-border">
     <!---------------------- Header section ---------------------->
-    <header></header>
+    <header class="header bg-white"></header>
     <!---------------------- Main content ---------------------->
     <main>
       <!---------------------- Hero section ---------------------->
       <section class="hero">
-        <div class="hero-grid">
-          <div class="hero-container">
-            <div class="hero-content">
-              <p class="eyebrow">Hi, my name is Sandra.</p>
-              <h1>
-                <span class="hero-heading-mobile">
-                  <span>Venturing</span>
-                  <span>Into Digital</span>
-                  <span>Design</span>
+        <div
+          class="lg:grid lg:grid-cols-[3fr_2fr] lg:auto-rows-auto lg:items-center lg:gap-8"
+        >
+          <div class="mt-8">
+            <div class="mx-7 mt-12 md:mx-11 lg:ml-40 lg:mt-8">
+              <!-- Eyebrow text -->
+              <p
+                class="text-customGrey text-xl md:text-2xl leading-snug md:leading-normal"
+              >
+                Hi, my name is Sandra.
+              </p>
+              <h1 class="mt-3 mb-4">
+                <span
+                  class="md:hidden lg:hidden text-customGrey text-4xl font-bold uppercase leading-snug"
+                >
+                  <span class="block">Venturing</span>
+                  <span class="block">Into Digital</span>
+                  <span class="block">Design</span>
                 </span>
-                <span class="hero-heading">
-                  <span>Venturing Into</span>
-                  <span>Digital Design</span>
+                <span
+                  class="hidden md:block text-customGrey text-5xl font-bold uppercase leading-normal"
+                >
+                  <span class="block">Venturing Into</span>
+                  <span class="block">Digital Design</span>
                 </span>
               </h1>
-              <p class="hero-intro">
+              <p
+                class="text-customGrey text-xl md:text-2xl leading-snug sm:leading-normal"
+              >
                 I am a Media Informatics student with a focus on web development
                 and web design. I enjoy creating digital experiences that are
                 both functional and visually appealing while continuously
@@ -64,97 +106,120 @@
                 collaborative projects, assignments or new opportunities.
               </p>
               <!-- Hero buttons -->
-              <div class="hero-btn-container">
-                <a href="./projects.html" class="hero-btn-primary btn"
-                  >My projects</a
+              <div
+                class="inline-flex flex-col custom-lg:inline-flex custom-lg:flex-row whitespace-nowrap gap-2 custom-lg:gap-8 w-full custom-lg:w-fit text-[1.8rem] my-11"
+              >
+                <a
+                  href="./projects.html"
+                  class="text-customGrey text-xl md:text-2xl text-center leading-snug custom-lg:leading-normal border-2 border-customGrey hover:border-black rounded-lg shadow-[4px_4px_0_theme(colors.customGrey)] hover:shadow-[4px_4px_0_#030303] px-8 py-4 mb-8 transition-transform duration-300 hover:-translate-y-1 hover:text-black hover:bg-customHoverPurple bg-customPurple block w-full custom-lg:inline-flex custom-lg:w-auto"
+                  aria-label="Navigate to 'My Projects' page"
+                  >My Projects</a
                 >
-                <a href="./about.html" class="hero-btn-secondary btn"
-                  >About me</a
+                <a
+                  href="./about.html"
+                  class="text-customGrey text-xl md:text-2xl text-center leading-snug custom-lg:leading-normal border-2 border-customGrey hover:border-black rounded-lg shadow-[4px_4px_0_theme(colors.customGrey)] hover:shadow-[4px_4px_0_#030303] px-8 py-4 mb-8 transition-transform duration-300 hover:-translate-y-1 hover:text-black hover:bg-customHoverBeige bg-customBeige block w-full custom-lg:inline-flex custom-lg:w-auto"
+                  aria-label="Navigate to 'About Me' page"
+                  >About Me</a
                 >
               </div>
             </div>
           </div>
-          <div class="hero-image">
-            <!-- Hero image (full width) -->
-            <picture class="hero-img-container">
-              <source
-                srcset="./assets/images/small/sandra_wittek_600w.jpg"
-                media="(max-width: 640px)"
-              />
-              <source
-                srcset="./assets/images/medium/sandra_wittek_1000h.jpg"
-                media="(max-width: 1024px)"
-              />
-              <source
-                srcset="./assets/images/large/sandra_wittek_1500w.jpg"
-                media="(min-width: 1025px)"
-                width="500px"
-              />
-              <img
-                src="./assets/images/medium/sandra_wittek_1500w.jpg"
-                alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
-                width="100%"
-              />
-            </picture>
-          </div>
+
+          <!-- Hero image -->
+          <picture
+            class="w-full md:w-[calc(100%+3.5rem)] md:ml-[-1.75rem] lg:w-auto lg:ml-0 lg:min-w-[500px] lg:max-w-[800px] lg:h-[500px] lg:pr-40 block leading-none"
+          >
+            <source
+              srcset="./assets/images/small/sandra_wittek_600w.jpg"
+              media="(max-width: 640px)"
+            />
+            <source
+              srcset="./assets/images/medium/sandra_wittek_1000h.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/sandra_wittek_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/sandra_wittek_1500w.jpg"
+              alt="Black-and-white portrait image of Sandra Wittek with colorful, playful, and geometric elements"
+              width="100%"
+              class="max-w-full h-auto lg:rounded-lg object-cover min-w-[342px]"
+            />
+          </picture>
         </div>
       </section>
       <!---------------------- About section ---------------------->
       <section class="about">
-        <div class="about-grid">
-          <div class="about-container">
-            <div class="about-content">
-              <h2>Welcome Aboard!</h2>
-              <p class="about-p">
-                As a flight attendant and Media Informatics student at IU
-                International University of Applied Sciences, I combine my
-                practical experience in the air with a passion for web
-                development and design. Both fields have taught me the value of
-                adaptability, attention to detail and creative problem-solving.
-                When I’m not cruising at 30,000 feet, I enjoy refining my tech
-                skills and transforming ideas into functional
-                designs&nbsp;-&nbsp;one line at a time.
-              </p>
+        <div
+          class="lg:grid lg:grid-cols-[3fr_2fr] lg:auto-rows-auto lg:items-center lg:gap-8"
+        >
+          <div class="mx-7 mt-12 md:mx-11 lg:ml-40 lg:mt-8">
+            <h2
+              class="text-customGrey text-3xl md:text-4xl uppercase font-semibold mb-6 leading-snug sm:leading-normal sm:leading-normal"
+            >
+              Welcome Aboard!
+            </h2>
+            <p
+              class="text-customGrey text-xl md:text-2xl leading-snug sm:leading-normal"
+            >
+              As a flight attendant and Media Informatics student at IU
+              International University of Applied Sciences, I combine my
+              practical experience in the air with a passion for web development
+              and design. Both fields have taught me the value of adaptability,
+              attention to detail and creative problem-solving. When I’m not
+              cruising at 30,000 feet, I enjoy refining my tech skills and
+              transforming ideas into functional designs&nbsp;-&nbsp;one line at
+              a time.
+            </p>
 
-              <!-- About buttons -->
-              <div class="about-btn-container">
-                <a
-                  href="https://sandrajessica.github.io/my-resume/"
-                  class="about-btn-primary btn"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Sandra Wittek's resume in HTML format (opens in a new tab)"
-                  >HTML resume</a
-                >
-                <a href="./contact.html" class="about-btn-secondary btn"
-                  >Let's connect</a
-                >
-              </div>
+            <!-- About buttons -->
+            <div
+              class="inline-flex flex-col custom-lg:inline-flex custom-lg:flex-row whitespace-nowrap gap-2 custom-lg:gap-8 w-full custom-lg:w-fit text-[1.8rem] my-11"
+            >
+              <a
+                href="https://sandrajessica.github.io/my-resume/"
+                class="text-customGrey text-xl md:text-2xl text-center leading-snug custom-lg:leading-normal border-2 border-customGrey hover:border-black rounded-lg shadow-[4px_4px_0_theme(colors.customGrey)] hover:shadow-[4px_4px_0_#030303] px-8 py-4 mb-8 transition-transform duration-300 hover:-translate-y-1 hover:text-black hover:bg-customHoverGreen bg-customGreen block w-full custom-lg:inline-flex custom-lg:w-auto"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Sandra Wittek's resume in HTML format (opens in a new tab)"
+                >HTML Resume</a
+              >
+              <a
+                href="./contact.html"
+                class="text-customGrey text-xl md:text-2xl text-center leading-snug custom-lg:leading-normal border-2 border-customGrey hover:border-black rounded-lg shadow-[4px_4px_0_theme(colors.customGrey)] hover:shadow-[4px_4px_0_#030303] px-8 py-4 mb-8 transition-transform duration-300 hover:-translate-y-1 hover:text-black hover:bg-customHoverBeige bg-customBeige block w-full custom-lg:inline-flex custom-lg:w-auto"
+                aria-label="Navigate to 'Contact Me' page"
+                >Let's Connect</a
+              >
             </div>
           </div>
-          <div class="about-image">
-            <!--About image (full width)-->
-            <picture class="about-img-container">
-              <source
-                srcset="./assets/images/small/webdesign_600w.jpg"
-                media="(max-width: 640px)"
-              />
-              <source
-                srcset="./assets/images/medium/webdesign_1000h.jpg"
-                media="(max-width: 1024px)"
-              />
-              <source
-                srcset="./assets/images/large/webdesign_1500w.jpg"
-                media="(min-width: 1025px)"
-                width="500px"
-              />
-              <img
-                src="./assets/images/medium/webdesign_1500w.jpg"
-                alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
-                width="100%"
-              />
-            </picture>
-          </div>
+
+          <!-- About image -->
+          <picture
+            class="w-full md:w-[calc(100%+3.5rem)] md:ml-[-1.75rem] lg:w-auto lg:ml-0 lg:min-w-[500px] lg:max-w-[800px] lg:h-[500px] lg:pr-40 block leading-none lg:mb-16"
+          >
+            <source
+              srcset="./assets/images/small/webdesign_600w.jpg"
+              media="(max-width: 640px)"
+            />
+            <source
+              srcset="./assets/images/medium/webdesign_1000h.jpg"
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="./assets/images/large/webdesign_1500w.jpg"
+              media="(min-width: 1025px)"
+              width="500px"
+            />
+            <img
+              src="./assets/images/medium/webdesign_1500w.jpg"
+              alt="Colorful graphic representation of a web design process, featuring browser window elements and design tools like tags and a paintbrush."
+              width="100%"
+              class="max-w-full h-auto lg:rounded-lg object-cover min-w-[342px]"
+            />
+          </picture>
         </div>
       </section>
     </main>

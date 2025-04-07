@@ -1,10 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Roboto Mono"', "monospace"],
+              jersey: ['"Jersey 10"', "serif"],
+            },
+            colors: {
+              customPurple: "#ac86a6",
+              customBeige: "#f5f1e1",
+              customGreen: "#85c7aa",
+              customGrey: "rgba(0, 0, 0, 0.75)",
+              customHoverPurple: "#a2789b",
+              customHoverBeige: "#f7f4ea",
+              customHoverGreen: "#7aba9e",
+            },
+            boxShadow: {
+              custom: "#030303 0.1rem 0.1rem 0",
+            },
+          },
+        },
+      };
+    </script>
     <!-- Google fonts sono, jersey 10 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,16 +57,22 @@
   <script src="./assets/js/header_loader.js" defer></script>
   <!-- jQuery footer component-->
   <script src="./assets/js/footer_loader.js" defer></script>
-  <body>
+  <body class="m-0 p-0 box-border">
     <!---------------------- Header section ---------------------->
-    <header></header>
+    <header class="header bg-white"></header>
     <!---------------------- Main content --------------------->
     <main>
       <!---------------------- Hero section --------------------->
       <section class="projects-hero">
-        <div class="projects-hero-container">
-          <h1 class="projects-h1">My Projects</h1>
-          <p class="projects-p">
+        <div class="mx-7 mt-12 md:mx-11 lg:mx-40 lg:mt-8 mb-11">
+          <h1
+            class="mt-3 mb-4 text-customGrey text-3xl md:text-4xl font-bold uppercase leading-snug md:leading-normal"
+          >
+            My Projects
+          </h1>
+          <p
+            class="text-customGrey text-xl md:text-2xl leading-snug sm:leading-normal"
+          >
             As part of a Udemy course on web development, I have worked on some
             projects that have helped me deepen my skills in front-end
             technologies. These projects include simple web designs and
@@ -55,11 +86,17 @@
       </section>
       <!---------------------- Projects section --------------------->
       <section class="projects">
-        <div class="projects-grid">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-11 lg:gap-0 my-10 md:my-12 lg:mx-40 lg:my-16"
+        >
           <!-- Project #1 -->
-          <div class="project-container">
-            <!-- Project image -->
-            <picture class="project-img-container">
+          <div
+            class="mx-7 md:mx-11 lg:ml-0 lg:mr-6 xl:mr-10 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
+            <!-- Project #1 image -->
+            <picture
+              class="mb-8 block leading-none w-full lg:min-h-[200px]"
+            >
               <source
                 srcset="./assets/images/small/scratch_600w.jpg"
                 media="(max-width: 600px)"
@@ -77,15 +114,20 @@
                 src="./assets/images/small/scratch_600w.jpg"
                 alt="Screenshot of the Mockup 'From Scratch to Match' – a playful cat matchmaking app."
                 width="100%"
+                class="w-full h-full object-cover object-top rounded-t-lg lg:h-[200px]"
               />
             </picture>
 
-            <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">
-                <span class="project-h2-span">From Scratch</span> to Match
+            <!-- Project #1 content -->
+            <div class="flex flex-col h-full px-4">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
+                <span class="block">From Scratch</span> to Match
               </h2>
-              <p>
+              <p
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
+              >
                 "From Scratch to Match" is a web design concept for a fictional
                 app that connects cats with playmates. Designed with HTML, CSS,
                 and Bootstrap, the project presents a visual prototype of the
@@ -93,34 +135,40 @@
                 lovers.
               </p>
 
-              <!-- Project link -->
-              <div class="project-btn">
+              <!-- Project #1 link -->
+              <div class="mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/from-scratch-to-match/"
-                  class="project-btn-link"
+                  class="text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's 'From Scratch to Match' web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="transition-transform ml-2 group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
+    
                   >
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="20px" /></span
+                      width="20px"
+                      class="hover:scale-110" /></span
                 ></a>
               </div>
             </div>
           </div>
 
           <!-- Project #2 -->
-          <div class="project-container">
-            <!-- Project Image -->
-            <picture class="project-img-container">
+          <div
+            class="mx-7 md:mx-11 lg:ml-0 lg:mr-6 xl:mr-10 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
+            <!-- Project #2 Image -->
+            <picture
+              class="mb-8 block leading-none w-full lg:min-h-[200px]"
+            >
               <source
                 srcset="./assets/images/small/pricing_table_600w.jpg"
                 media="(max-width: 600px)"
@@ -136,31 +184,38 @@
               />
               <img
                 src="./assets/images/medium/pricing_table_1000w.jpg"
-                alt=" Screenshot of a Responsive pricing table design."
+                alt=" Screenshot of a responsive pricing table design."
                 width="100%"
+                class="w-full h-full object-cover object-top rounded-t-lg lg:h-[200px]"
               />
             </picture>
 
-            <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">Pricing Table</h2>
-              <p>
+            <!-- Project #2 content -->
+            <div class="flex flex-col h-full px-4">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
+                Pricing Table
+              </h2>
+              <p
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
+              >
                 A responsive pricing table built with HTML, CSS and Bootstrap
                 adapts to different screen sizes using flexbox or media queries.
                 It ensures readability on all devices by adjusting layout,
                 styling and visibility dynamically.
               </p>
-              <!-- Project link -->
-              <div class="project-btn">
+              <!-- Project #2 link -->
+              <div class="mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/pricing-table-design/"
-                  class="project-btn-link"
+                  class="text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's pricing table web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="transition-transform ml-2 group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
@@ -168,17 +223,21 @@
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="
-                20px" /></span
+                      width="20px"
+                      class="hover:scale-x-110" /></span
                 ></a>
               </div>
             </div>
           </div>
 
           <!-- Project #3 -->
-          <div class="project-container">
+          <div
+            class="mx-7 md:mx-11 lg:ml-0 lg:mr-6 flex flex-col border border-black border-opacity-10 rounded-lg shadow-md"
+          >
             <!-- Project #3 image -->
-            <picture class="project-img-container">
+            <picture
+              class="mb-8 block leading-none w-full lg:min-h-[200px]"
+            >
               <source
                 srcset="./assets/images/small/portfolio_600w.jpg"
                 media="(max-width: 600px)"
@@ -194,15 +253,22 @@
               />
               <img
                 src="./assets/images/medium/portfolio_1000w.jpg"
-                alt="Screenshot of the hero section of a portfolio website."
+                alt="Screenshot of the hero image and title of a portfolio website project."
                 width="100%"
+                class="w-full h-full object-cover object-top rounded-t-lg lg:h-[200px]"
               />
             </picture>
 
-            <!-- Project content -->
-            <div class="project-content-container">
-              <h2 class="project-h2">Portfolio Page</h2>
-              <p>
+            <!-- Project #3 content -->
+            <div class="flex flex-col h-full px-4">
+              <h2
+                class="text-customGrey uppercase text-xl md:text-2xl font-bold mb-4"
+              >
+                Portfolio Page
+              </h2>
+              <p
+                class="text-customGrey text-lg md:text-xl leading-snug md:leading-normal mb-4 flex-grow"
+              >
                 A simple portfolio web design showcasing my skills and hobbies.
                 Built with HTML, CSS, it highlights my studies in Media
                 Informatics, hobbies, and passion for web design. The layout is
@@ -210,17 +276,17 @@
                 abilities.
               </p>
 
-              <!-- Project link -->
-              <div class="project-btn">
+              <!-- Project #3 link -->
+              <div class="mt-auto mb-6">
                 <a
                   href="https://sandrajessica.github.io/sandrawittek/"
-                  class="project-btn-link"
+                  class="text-lg md:text-xl font-semibold text-customGrey hover:text-black group flex items-center"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Visit Sandra Wittek's portfolio web design project (opens in a new tab)"
                   >See Website
                   <span
-                    class="arrow-icon"
+                    class="transition-transform ml-2 group-hover:scale-x-150 inline-flex items-center"
                     aria-hidden="true"
                     role="presentation"
                     tabindex="-1"
@@ -228,8 +294,8 @@
                     <img
                       src="./assets/images/small/thin-arrow-direction-right-svgrepo-com.svg"
                       alt=""
-                      width="
-                20px" /></span
+                      width="20px"
+                      class="hover:scale-x-110" /></span
                 ></a>
               </div>
             </div>
